@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WINE</title>
+    <link rel="stylesheet" href="./style_theme.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- title -->
+      <div>
+        <div class="news_title">
+          <h1 class="en_title">
+            THEME
+          </h1>
+        </div>
+        <div class="news_title">
+          <h1
+          class="chinese_title"
+            style="
+              
+              width: 80vw;
+            "
+          >
+            主題專區
+          </h1>
+        </div>
+        <div class="sub_title">
+          <h1>古華酒藏</h1>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="all">
+        <div class="detail">
+          
+            <h2 style="text-align: center">
+              古華酒藏 <br />
+              <br />
+
+              <br />
+              古華酒藏匯集世界知名限量珍稀酒款，歡迎鍾情品酩、喜好收藏的您親臨鑑賞。<br />
+            </h2>
+          </div >
+          <div class="items">
+            <div>
+                <img src="./wine/1.png" alt="">
+                    <p style="text-align: center;">
+                        Säntis Malt Snow White Set <br> 
+                        超值特價NT$499+10%/3杯/Set<br>
+                        瑞士山蹄士 白雪公主系列套組 
+                    </p>
+              </div>
+              <div>
+                <img src="./wine/2.png" alt="">
+                    <p style="text-align: center;">
+                        Ardbeg SetNT$399+10%/4杯 <br>
+                        雅柏套組(Isle of Islay艾雷島)
+                    </p>   
+              </div>
+              <div>
+                <img src="./wine/3.png" alt="">
+                    <p style="text-align: center;">
+                        Aberfeldy Set NT$399+10%/3杯 <br>
+                        Aberfeldy 艾柏迪系列套組(Highland 高地)
+                    </p>
+              </div>
+              <div>
+                <img src="./wine/4.png" alt="">
+                    <p style="text-align: center;">
+                        Aultmore Set NT$699+10%/3杯 <br>
+                        雅墨系列套組(Speyside 斯珮賽)
+                    </p>
+              </div>
+              <div>
+                <img src="./wine/5.png" alt="">
+                    <p style="text-align: center;">
+                        The Balvenie Set NT$599+10%/4杯 <br>
+                        The Balvenie 百富系列套組(Speyside 斯珮賽區)
+              </div>
+              <div>
+                <img src="./wine/6.png" alt="">
+                    <p style="text-align: center;">
+                        NT$499+10%/3杯 <br>
+                        BOX瑞典盒子系列套組(另贈酌飲小點)
+              </div>
+              <div>
+                <img src="./wine/7.png" alt="">
+                    <p style="text-align: center;">
+                        Bruichladdich Set 超值特價NT$399+10%/5杯 <br>
+                        100%艾雷島Bruichladdich系列套組(另贈酌飲小點)
+              </div>
+              <div>
+                <img src="./wine/8.png" alt="">
+                    <p style="text-align: center;">
+                        Craigellachie Set NT$699+10%/3杯 <br>  
+                        Craigellachie 魁列奇套組
+              </div>
+              <div>
+                <img src="./wine/9.png" alt="">
+                    <p style="text-align: center;">
+                        Flóki Set 超值特價NT$399+10%/3杯  br
+                        極光之醉Flóki系列套組(另贈酌飲小點) 
+              </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+    
+  </body>
+</html>

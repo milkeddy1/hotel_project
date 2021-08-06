@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="./style_food.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+         //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 class="en_title" >
+              FOOD
+            </h1>
+          </div>
+          <div class="news_title">
+            <h1 class="chinese_title" style="width: 80vw;">
+              多元美食
+            </h1>
+          </div>
+          <div class="sub_title">
+            <h1>主題餐廳</h1>
+        </div>
+        </div>
+
+        <div class="all">
+            
+                <div class="detail"><h1 style="text-align: center;">明皇樓中餐廳</h1></div>
+                <div class="detail"><img src="./food/1.png" alt=""></div>
+                <div class="detail" style="border-bottom:3px solid #64101f;"><p>
+                    訂位專線：(03)281-1818 轉 2219  <br><br>
+     
+                    《滬川美味任您饗》<br>
+                    § 古華HAPPY GO卡及當日房客平日中餐、晚餐享餐費 『9折優惠』(餐費內含茶資NT$30+10%)<br>
+                    § 尊爵俱樂部會員 『兩人以上成行會員一人免費』<br>
+                    § 加購價Sapporo Beer NT$258+10%/人 『無限暢飲』   <br><br>  
+                     
+                    《滬川美味單點菜單》<br>
+                    § 古華HAPPY GO卡及當日房客享 『9折優惠』<br>
+                    § 尊爵俱樂部會員 『兩人以上成行會員一人免費』<br>
+                    § 加購價Sapporo Beer NT$258+10%/杯/500cc 『買一送一』<br><br>
+                     
+                    目前官網之優惠適用於會員卡有效期限EXP 01/2021 以前之會員。<br>
+                    會員卡有效期限EXP 02/2021 以後之會員，請參閱新的會員權益。</p></div>
+                    <!-- 分隔線 -->
+                    <div class="detail"><h1 style="text-align: center;">古華薈泰式料理暨酒吧 </h1></div>
+                    <div class="detail"><img src="./food/2.png" alt="" ></div>
+                    <div class="detail" style="border-bottom:3px solid #64101f;"><p>
+                        訂位專線：(03)281-1818轉2201 <br><br>
+ 
+                    《泰超值吃到飽》<br>
+                § 古華HAPPY GO卡平日享餐費 『9折優惠』(不含酒水)<br>
+                § 尊爵俱樂部會員 『兩人以上成行會員一人免費』<br>
+                § 清涼飲料無限暢飲，加購價Taiwan Beer NT$99+10%/人 『二小時無限暢飲』<br><br>
+ 
+                 《泰式單點菜單》<br>
+                 § 尊爵俱樂部會員 『兩人以上成行會員一人免費』<br><br>
+ 
+                  《WOW Happy Hours》<br>
+                 § 平/假日至古華薈消費享南洋風味飲品、調合雞尾酒、生啤酒500cc、義式咖啡『買一送一』<br><br>
+
+                目前官網之優惠適用於會員卡有效期限EXP 01/2021 以前之會員。<br>
+                會員卡有效期限EXP 02/2021 以後之會員，請參閱新的會員權益。</p></div>
+                        <!-- 分隔線 -->
+                        <div class="detail"><h1 style="text-align: center;">繽紛西餐廳</h1></div>
+                        <div class="detail"><img src="./food/3.png" alt="" ></div>
+                        <div class="detail"><p>
+                            訂位專線：(03)281-1818 轉 2101<br><br>
+ 
+                《西式自助百匯》<br>
+                地球村美食節<br>
+                § 古華HAPPY GO卡搭配現金結帳享 『兩人同行一人免費』(限成人)，
+                  兒童半價收費，恕不享有此優惠折扣)<br>
+                § 尊爵俱樂部會員再享95折優惠(現金、刷卡均可)</p></div>
+
+             
+            
+        
+            
+        </div>
+        
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

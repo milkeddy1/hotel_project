@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 style="width: 80vw;" class="border">最新消息</h1>
+            </div>
+            <div class="sub_title">
+                <h1>實名制登記【公告】</h1>
+            </div>
+        </div>
+        
+        <div style="width: 75vw; margin: 0 auto;line-height: 3rem;">
+            <p style="position: relative; top: 20rem;">
+                ○ 古華花園飯店配合政府各項防疫措施，提醒貴賓進入飯店各區域及在自助餐檯取餐時，請全程配戴口罩，並請於餐廳用餐時填寫「COVID-19防疫實聯制措施」表單。
+                古華花園飯店與您一同守護健康，感謝各位貴賓的配合。
+                <br>
+                古華花園飯店各餐廳為提供最安全的用餐空間，配合政府宣導政策，持續強化防疫工作，嚴加守護顧客及員工的健康安全！敬請各位貴賓安心用餐。
+                <br>
+                ○  全面防疫升級，針對客房和公共區域的消毒熱點加強清潔。
+                <br>
+                ○  全體同仁於值勤前均測量體溫、手部清潔及消毒，並於執勤時一律配戴口罩。
+                <br>
+                ○  飯店入口及車道備有額溫槍，每一位蒞臨貴賓皆主動測量體溫，同時放置酒精可噴灑手部消毒。
+                <br>
+                ○  餐廳用餐顧客一律採實聯制登記。
+                <br>
+                ○  每一組賓客離席，皆全面清潔消毒桌面。
+                <br>
+                ○  各餐廳餐具皆經高溫消毒後才供使用。
+                <br>
+                ○  為使用餐貴賓安心用餐、避免飛沫傳染，進入餐廳內與靠近餐檯區時務必配戴口罩，並減少交談，敬請配合。
+                <br>
+ 
+                若有防疫相關疑慮或有身體不適情況，請告知服務人員，我們會立即提供協助，也感謝大家的配合。
+                <br>
+                有關新型冠狀病毒肺炎疫情詳情請參考<a href="https://www.cdc.gov.tw/"> 衛生福利部疾病管制署網站</a> ，或撥打疾管署防疫專線1922。
+            </p>
+        </div>
+         
+
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

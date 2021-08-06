@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 class="border" style="width: 80vw;">最新消息</h1>
+            </div>
+            <div class="sub_title">
+                <h1>禁止性騷擾及性侵害公開揭示【公告】</h1>
+            </div>
+        </div>
+        
+        <div style="width: 75vw; margin: 0 auto;line-height: 3rem;">
+            <p style="position: relative; top: 20rem;">
+                古華花園飯店(以下簡稱本飯店)為防治及處理性騷擾事件，提供免受性騷擾之服務環境，特依性別工作平等法第13條、工作場所性騷擾防治措施申訴及懲戒辦法訂定準則及性騷擾防治法第7條之規定，訂定「古華花園飯店性騷擾防治、申訴及調查處理要點」，公開揭示並聲明如下： <br><br>
+
+一、任何人不得對他人性騷擾或性侵害。<br>
+二、性騷擾他人者，依法得處新台幣1萬元以上10萬元以下罰鍰；利用權勢或機會進行性騷擾者，其
+       罰鍰加重二分之一。<br>
+三、性騷擾或性侵害他人者，負有法律上之刑事及民事責任。<br>
+四、發現或知悉性騷擾事件，本飯店申訴專線：<br>
+       § 專線電話：(03)281-1818分機2112<br>
+       § 專線傳真： (03)281-3333<br>
+       § 電子信箱：jackie.lin@kuva-chateau.com.tw<br>
+            </p>
+        </div>
+         
+
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 class="border" style="width: 80vw;">最新消息</h1>
+            </div>
+            <div class="sub_title">
+                <h1>防詐騙提醒公告【公告】</h1>
+            </div>
+        </div>
+        
+        <div style="width: 75vw; margin: 0 auto;line-height: 3rem;">
+            <p style="position: relative; top: 20rem;">
+                古華花園飯店提醒您，本公司不會致電要求您提供信用卡帳號或銀行相關資料，亦不會在電話中以誤刷款項名義進行信用卡退款作業，更不會要求您操作網路或實體ATM、變更付款方式或補繳金額，請您提高警覺以免受騙。 <br>
+如接獲不明及可疑的電話或簡訊提出上述要求，請不予理會，並儘速反映至警政署防詐騙專線165或內政部警政署防詐騙網址 <br>
+<a href="https://www.165.gov.tw/list_protection.aspx">https://www.165.gov.tw/list_protection.aspx</a>
+            </p>
+        </div>
+         
+
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

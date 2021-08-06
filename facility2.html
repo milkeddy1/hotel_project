@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facilities</title>
+    <link rel="stylesheet" href="./style_facility.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+         //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div>
+       
+        <div>
+          <div class="news_title">
+            <h1 class="en_title">
+              facility & service
+            </h1>
+          </div>
+          <div class="news_title">
+            <h1
+            class="chinese_title"
+              style=" 
+                width: 80vw;
+              "
+            >
+            設施服務
+            </h1>
+          </div>
+          <div class="sub_title" >
+            <h1>會議場地</h1>
+        </div>
+        </div>
+        <!-- 內文 -->
+        <div class="all">
+          <div class="detail">
+              <div style="margin: 2rem; text-align: center;">
+                
+              <img src="./facility/2.png" alt=""  class="sm_pic">
+              <h2 style="padding: 1rem;">
+                國際宴會廳
+              </h2>
+              <p >
+                &emsp;挑高7米6的諾大空間，是舉辦傳統中式婚宴的最佳場地，西式婚宴或小型派對可安排於宴會廳獨立包廂舉行。爲新人提供全面性的婚宴服務，從迎娶、婚宴到安排蜜月客房都照顧周到，同時飯店也樂於爲參加婚宴的親屬和客人安排住宿及接送，以及準備結婚蛋糕等服務，確保每對佳偶均可以在大喜日子享受夢寐以求的最佳體驗。<br><br>
+
+                &emsp;另外，「國際宴會廳」亦適用於產品發表會、大型會報、記者會、餐會或私人婚禮喜宴、壽宴及工商聚會…等，可針對不同場合需求，分隔為以國際1廳、國際2廳命名的多功能會議及宴會場所空間，另還有專業宴會企劃人員，提供您專業建議及彈性配合各式服務需求。
+
+                如需服務請洽，訂席中心：(03) 281-3636
+            </p>
+              </div>
+            <div style="margin: 2rem;text-align: center;">
+                <img src="./facility/3.png" alt=""  class="sm_pic">
+                <h2 style="padding: 1rem;">
+                  桃風宴會廳
+                </h2>
+                <p >
+                    &emsp;桃風宴會廳」是舉辦傳統中式婚宴的最佳場地，西式婚宴或小型派對可安排於宴會廳獨立包廂舉行。爲新人提供全面性的婚宴服務，從迎娶、婚宴到安排蜜月客房都照顧周到，同時飯店也樂於爲參加婚宴的親屬和客人安排住宿及接送，以及準備結婚蛋糕等服務，確保每對佳偶均可以在大喜日子享受夢寐以求的最佳體驗。<br><br>
+                另外，「桃風宴會廳」亦適用於產品發表會、大型會報、記者會、餐會或私人婚禮喜宴、壽宴及工商聚會…等，可針對不同場合需求，分隔為以桃、花、舞、春、風命名的多功能會議及宴會空間，另還有專業宴會企劃人員，提供您專業建議及彈性地配合您各式服務需求。
+ 
+                如需服務請洽，訂席中心：(03) 281-3636
+                </p>
+            </div>
+        </div>
+        
+        
+   </div>
+        
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

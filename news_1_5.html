@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 class="border" style="width: 80vw;">最新消息</h1>
+            </div>
+            <div class="sub_title">
+                <h1>Rakuten住房專案【優惠】</h1>
+            </div>
+        </div>
+        
+        <div style="width: 75vw; margin: 0 auto;line-height: 3rem;">
+            <p style="position: relative; top: 20rem;">
+                活動期間：2021年03月20日至06月30日
+                <br>
+                活動內容：
+                <br>
+                ◎行政雙人房(不含早餐)+ Rakuten主場球賽門票兌換券2張：
+                  優惠價NT$2,688(原價NT$8,180)<br>
+                ◎行政三人房(不含早餐)+ Rakuten主場球賽門票兌換券3張：
+                  優惠價NT$3,388(原價NT$9,230)<br>
+                ◎行政雙床四人房(不含早餐)+ Rakuten主場球賽門票兌換券4張：
+                  優惠價NT$4,188(原價NT$12,180)<br>
+                 
+                注意事項：<br>
+                1.請事先來電訂房，每一客房均贈送免費礦泉水、依房型提供元氣體驗券，並享有館內餐飲9折優惠。<br>
+                2.Rakuten主場賽門票兌換券使用規則說明：<br>
+                ●Rakuten主場賽門票兌換券為票券憑證，請於開賽前兩小時至 桃園國際棒球場售票口兌換內野位置門票，門票數量依球賽現場數量而動，若該場球賽票券已售完即不再接受兌換，恕無法折抵現金或更換外野門票。<br>
+                3.此券可於2021 Rakuten主場例行賽及補賽使用，不含阿迷、動紫等特殊主題、明星賽、季後賽或總冠軍賽使用，主場例行賽期間未兌換完畢，恕無法退費及延期使用。<br>
+                4. 不適用於連續假期(5/1、6/12、6/13)<br>
+                5.此優惠不得與其他優惠方案合併使用，古華花園飯店保留變更及終止此優惠方案之權利。<br>
+                 
+                ※如停車位客滿，請使用周邊停車場。響應節能減碳，請多搭乘大眾運輸工具。
+            </p>
+        </div>
+         
+
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

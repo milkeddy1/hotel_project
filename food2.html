@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="./style_food.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 class="en_title">
+              FOOD
+            </h1>
+          </div>
+          <div class="news_title">
+            <h1
+            class="chinese_title"
+              style="
+               
+                width: 80vw;
+              "
+            >
+              多元美食
+            </h1>
+          </div>
+          <div class="sub_title" >
+            <h1>極品點心</h1>
+        </div>
+        </div>
+
+        <div class="all">
+            
+                <div class="detail"><h1 style="text-align: center;">酷糕點</h1></div>
+                <div class="detail"><img src="./food/4.png" alt="" ></div>
+                <div class="detail" style="border-bottom:3px solid #64101f;"><p>
+                    訂位專線：(03)281-1818 轉 2128 <br><br>
+ 
+                《限量手工麵包、蛋糕、咖啡及茶品》<br>
+                § 古華HAPPY GO卡麵包、吐司、蛋糕9折優惠<br>
+                § 尊爵俱樂部會員享麵包、蛋糕同價位指定品項8折優惠<br>
+                § 當日房客享9折優惠<br><br>
+ 
+                《潛艇堡早午餐、輕食套餐》<br>
+                § 古華HAPPY GO卡及當日房客享 『9折優惠』<br>
+                § 尊爵俱樂部會員 『兩人以上成行會員一人免費』，外帶88折優惠<br><br>
+ 
+                目前官網之優惠適用於會員卡有效期限EXP 01/2021 以前之會員。<br>
+                會員卡有效期限EXP 02/2021 以後之會員，請參閱新的會員權益。</p></div>
+                    <!-- 分隔線 -->
+                    <div class="detail"><h1 style="text-align: center;">皇家下午茶</h1></div>
+                    <div class="detail"><img src="./food/5.png" alt="" ></div>
+                    <div class="detail" style="border-bottom:3px solid #64101f;"><p>
+                        賞味期間 14:30-17:00 (最後點餐時間為16:30) <br>
+                賞味餐廳 古華薈泰式料理暨酒吧<br>
+                持古華HAPPY GO卡，不分平假日，享9折優惠<br><br>
+
+                注意事項<br>
+                1.持古華HAPPY GO卡享9折優惠，需加收一成原價服務費。<br>
+                2.尊爵俱樂部會員依會員權益享兩人以上成行會員一人免費。<br>
+                3.此優惠不適用於特殊節日(依飯店定義為準)。<br>
+                4.此優惠不得與其他優惠合併使用，古華花園飯店保留變更及終止此優惠方案之權利。<br><br>
+ 
+                訂位專線：(03)281-1818 轉 2201、2202<br>
+                ~禁止酒駕 未滿十八歲，禁止飲酒~<br>
+
+                目前官網之優惠適用於會員卡有效期限EXP 01/2021 以前之會員。<br>
+                會員卡有效期限EXP 02/2021 以後之會員，請參閱新的會員權益。</p></div>
+                        <!-- 分隔線 -->
+                      
+             
+            
+        
+            
+        </div>
+        
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

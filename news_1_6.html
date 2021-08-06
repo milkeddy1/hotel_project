@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 class="border" style="width: 80vw;">最新消息</h1>
+            </div>
+            <div class="sub_title">
+                <h1>Xpark 一泊一食住房專案【優惠】</h1>
+            </div>
+        </div>
+        
+        <div style="width: 75vw; margin: 0 auto;line-height: 3rem;">
+            <p style="position: relative; top: 20rem;">
+                活動時間:即日起至110年6月30日止 <br>
+活動內容:住房+兩張Xpark門票兌換券+兩客古華經典牛肉麵
+NT$3,299起
+<br>
+訂房專線:03-281-2626
+<br>
+注意事項:<br>
+1.此專案需於三日前預訂。<br>
+2. Xpark門票 "僅限" 入住當晚 18:00後的場次。<br>
+3. 古華經典牛肉麵須於酷糕點開放時段兌換(營業時間：10:00~20:30)。<br>
+4.  週五、周六與特殊節日需加價NT$1,000 、<br>
+過年期間(2/12-2/15) 加價NT$2,000、
+加一人含一客牛肉麵NT$1,000。<br>
+5. 特殊節日依古華公告為準。<br>
+6. 古華花園飯店保留變更及終止此優惠方案之權利。<br>
+
+※如停車位客滿，請使用周邊停車場。響應節能減碳，請多搭乘大眾運輸工具。
+ 
+            </p>
+        </div>
+         
+
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

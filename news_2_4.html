@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 class="border" style="width: 80vw;">最新消息</h1>
+            </div>
+            <div class="sub_title">
+                <h1>外籍旅客購物退稅服務【優惠】</h1>
+            </div>
+        </div>
+        
+        <div style="width: 75vw; margin: 0 auto;line-height: 3rem;">
+            <p style="position: relative; top: 20rem;">
+                古華花園飯店為經核准銷售特定貨物 之「外籍旅客退稅(TRS)商店」，外籍旅客於同一日於飯店內購買可退稅範圍內貨物，其含稅購物金額達新臺幣2,000元以上，並於購物日起90日內攜帶出境者，得於本飯店一樓大廳退稅櫃台辦理退稅明細申請單，在出境時可向海關申請退還購買貨物所支付之營業稅。<br>
+ 
+                適用對象：持有「非中華民國國籍之護照、無戶籍之中華民國護照及入出境證」者。<br>
+                
+                    <a href="http://taiwan.net.tw/m1.aspx?sNo=0001064">交通部觀光局-外籍旅客購物退稅資訊</a>
+            </p>
+        </div>
+         
+
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

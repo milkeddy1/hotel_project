@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+         //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 class="border" style="width: 80vw;">最新消息</h1>
+            </div>
+            <div class="sub_title">
+                <h1>營業時間調整【公告】</h1>
+            </div>
+        </div>
+        
+        <div style="width: 75vw; margin: 0 auto;line-height: 3rem;">
+            <p style="position: relative; top: 20rem;">
+                致所有嘉賓，感謝您蒞臨古華花園飯店，
+古華薈營業時間於即日起調整如下： <br>
+午    餐：11:30-14:00 每日  <br>
+晚    餐：17:30-21:00 每日 <br>
+宵    夜：21:00-23:00 周五~周六<br>
+ 
+注意事項：<br>
+1.每日午餐【最後點餐時間為13:30】。<br>
+2.每日晚餐【最後點餐時間為20:00】。<br>
+3.皇家下午茶由【酷糕點】提供服務。<br>
+4.宵夜時段僅提供酒水及小點，無提供正式餐點。<br>
+5.宵夜時段如遇國定連續假期，營業日為假期第一日至假期結束前一日。<br>
+6.客房餐飲服務時段為11:00-14:00 / 17:30-21:00
+【最後點餐時間同午、晚餐】。<br>
+ 
+謝謝您的長久以來的支持。
+古華花園飯店 敬上
+            </p>
+        </div>
+         
+
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

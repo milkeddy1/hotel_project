@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 class="border" style="width: 80vw;">最新消息</h1>
+            </div>
+            <div class="sub_title">
+                <h1>防疫公告【公告】</h1>
+            </div>
+        </div>
+        
+        <div style="width: 75vw; margin: 0 auto;line-height: 3rem;">
+            <p style="position: relative; top: 20rem;">
+                ❆  各房間皆使用獨立空調 ❆ <br>
+                為預防新型冠狀病毒，古華花園飯店並採取以下應變措施，提供您安心的環境並守護您的健康。<br>
+                 
+                1. 進行進行全面消毒。<br>
+                2. 入館時，專人使用額溫溫度計確認體溫。<br>
+                3.  於公區提供感應式消毒液。<br>
+                4 . C / I櫃檯再次確認客人體溫並主動追踪自主溫度記錄表並提供住客口罩（若發燒時）。<br>
+                5. 增加公區扶手按鈕的消毒頻率。<br>
+                6. 各結帳櫃檯的定時電話，檯面消毒。<br>
+                7. 工作人員全體佩戴口罩，包含櫃檯，餐飲，房務和清潔人員，上班前也需量體溫自主監測，如果發燒即刻停止上班在家休息。<br>
+                8. 房務人員整房時也會進行消毒，並針對客人可能接觸部位加強消毒。<br>
+                9. 提醒住客多多注意身體狀況，如有異狀，請立即告知櫃檯。<br>
+                10. 餐飲現場定期消毒，以確保環境衛生。<br>
+                 
+                同時，為防止2019新型冠狀病毒肺炎（COVID-19）疫情擴散，賓客應依下列服務政策與防疫措施辦理，以維護自己與他人之健康。<br>
+                 
+                服務政策<br>
+                 
+                本飯店將依賓客之健康狀況評估感染風險以確認是否受理訂房、訂席，且恕不接受下列具感染風險賓客之訂房、訂席，亦不接受由第三人代前述人員訂房、訂席；對已預定完成之訂房或訂席，將退還定金。<br>
+                 
+                *持「居家隔離通知書」、「居家檢疫通知書」欲於飯店實施檢疫，或至飯店用餐、舉辦會議或活動者。<br>
+                *來自第三級警告疫區或自第三級警告疫區之轉機者，且疫區之範疇應依主管機關之公告，不限前述地點。<br>
+                *拒絕配合測量體溫，或有咳嗽、發燒、呼吸急促等症狀拒絕配戴口罩並就醫者。<br>
+                 
+                賓客之誠實告知義務與責任<br>
+                 
+                *賓客不得隱匿旅遊活動史、不得隱匿自己或他人（含同住者、同行者、訪客等）接獲「居家隔離通知書」、「居家檢疫通知書」或「自主健康管理通知書」的事實，若賓客入住或至本飯店後始接獲前述通知書者，亦應主動誠實告知，不得隱瞞。<br>
+                 
+                *賓客或其家屬、或代為訂房訂席者，若知悉前述人員或特定人（含訪客）具上述感染風險，仍予以隱匿時，本飯店得解除契約、拒絕接待並退還定金，且無賠償責任；且若因前述行為導致本飯店發生損害，應負損害賠償責任。<br>
+                 
+                【全民防疫動起來】<br>
+                防疫專線 1922 或 0800-001922<br>
+                    <a href="https://www.cdc.gov.tw/">衛生福利部疾病管制署</a>  <br>
+                 <a href="https://www.boca.gov.tw/cp-56-5078- 41ac3-1.html">外交部領事事務局</a>  <br>
+                 
+                古華花園飯店關心您。
+            </p>
+        </div>
+         
+
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

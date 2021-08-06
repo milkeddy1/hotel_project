@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facilities</title>
+    <link rel="stylesheet" href="./style_facility.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+       
+        <div>
+          <div class="news_title">
+            <h1 class="en_title">
+              facility & service
+            </h1>
+          </div>
+          <div class="news_title">
+            <h1
+            class="chinese_title"
+              style="
+                
+                width: 80vw;
+              "
+            >
+            設施服務
+            </h1>
+          </div>
+          <div class="sub_title">
+            <h1>商務&服務</h1>
+        </div>
+        </div>
+        <!-- 內文 -->
+        <div class="all">
+          <div class="detail">
+              <div style="margin: 2rem;">
+                
+              <img src="./facility/7.png" alt="" class="sm_pic">
+              <p style=" padding-top: 4rem;line-height: 2rem;">
+                &emsp;&emsp;<span style="font-size: 2rem;">服務中心</span>   <br><br>
+ 
+                &emsp;有關賓客食、衣、住、行、育、樂各方面相關資訊提供與協助，務必使賓客留下賓至如歸的美好回憶。<br><br>
+
+                &emsp;服務項目：<br>
+                ‧ 交通接駁安排及機場接送服務 <br>
+                ‧ 旅遊資訊提供與協助 <br>
+                ‧ 行李運送及寄放服務<br><br><br>
+                
+               
+               服務時間：24小時
+
+                
+            </p>
+              </div>
+            <div style="margin: 2rem;">
+                <img src="./facility/8.png" alt="" class="sm_pic">
+                <p style=" padding-top: 4rem;line-height: 2rem;">
+                    
+                    &emsp;&emsp;<span style="font-size: 2rem;">商務中心</span> <br><br>
+                    &emsp;提供優雅舒適的環境，設有多項體貼商務人士的設備與服務。一應俱全的硬體，加上體貼入微的軟體服務，是您至可信賴的得力助手。<br><br>
+
+ 
+                    &emsp;服務專案：  <br>
+                    ‧包裹及郵遞服務、免費無線上網<br>
+                    ‧列印、傳真、影印服務、班機訂位及確認服務(服務請洽櫃檯)<br>
+                    ‧提供免費書報雜誌及咖啡<br><br><br>
+                     
+                    服務時間：07:00~22:00
+                </p>
+            </div>
+        </div>
+        
+        
+   </div>
+        
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

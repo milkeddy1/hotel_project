@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+         
+            box-sizing: border-box;
+        }
+       .nav_pic_outer{
+           overflow: hidden;
+       }
+        .nav_pics_roll{
+            
+            display: flex;
+        }
+        .nav_pics_roll input{
+            display: none;
+        }
+        .slide{
+            
+            transition: 2s;
+        }
+        .navigation-manual{
+            position: absolute;
+            width: 1900px;
+            top: 900px;
+            display: flex;
+            justify-content: center;
+        }
+        .manual-btn{
+            border: 2px solid #8D8D8D;
+            padding: 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 1s;
+            margin: 0 20px ;
+        }
+        .manual-btn:hover{
+            background: white;
+            opacity: 0.8;
+        }
+        #radio1:checked~.first{
+            margin-left: 0;   
+        }
+        #radio2:checked~.first{
+            margin-left: -1900px;   
+        }
+        #radio3:checked~.first{
+            margin-left: -3800px;   
+        }
+        #radio4:checked~.first{
+            margin-left: -5700px;   
+        }
+
+
+
+        /* auto */
+        .navigation-auto{
+            position: absolute;
+            display: flex;
+            width: 1900px;
+            justify-content: center;
+            top: 900px;
+        }
+        
+        .navigation-auto div{
+            border: 2px solid #8D8D8D;
+            padding: 20px;
+            border-radius: 20px;
+            transition: 1s;
+            margin: 0 20px;
+           
+        }
+       
+         #radio1:checked~ .navigation-auto .auto-btn1{
+          
+            background: white;
+            opacity: 0.8;
+        }
+        #radio2:checked~ .navigation-auto .auto-btn2{
+            background: white;
+            opacity: 0.8;
+        }
+        #radio3:checked~ .navigation-auto .auto-btn3{ 
+            background: white;
+            opacity: 0.8;
+        }
+        #radio4:checked~ .navigation-auto .auto-btn4{
+            background: white;
+            opacity: 0.8;
+        } 
+    </style>
+    
+  <body>
+    <script>
+        var counter=1
+        setInterval(function(){
+            document.getElementById('radio'+counter).checked = true;
+            counter++;
+            if(counter>4){
+                counter=1;
+            }
+        },5000);
+        
+    </script>
+    <div class="nav_pic_outer">
+      <div class="nav_pics_roll">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide first">
+          <img src="./home images/background1.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./home images/background2.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./home images/background3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./home images/background4.png" alt="" />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+
+      </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+  </body>
+</html>

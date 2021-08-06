@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <div class="news_title">
+          <h1 class="title_one" >NEWS</h1>
+          </div>
+          <div class="news_title" >
+          <h1 class="title_two" style="width: 80vw;">最新消息</h1>
+          </div>
+      </div>
+      <div class="new_web">
+       
+          <div>
+            <!-- roll one -->
+            <div class="row_one" >
+              <div class="news1">
+                <!-- 旋轉圖區域 -->
+                <div class="spin_pic1">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./home images/公告.png" alt="" />
+                  </div>
+                 
+                </div>
+                <!-- 旋轉圖下方文字 -->
+                <div class="news1_words">
+                  <div class="new1_title" style="text-align: center">
+                    <h2 style="font-size: 1.5rem">訂席中心</h2>
+                  </div>
+                  <div
+                    class="new1_content"
+                    style="
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                    "
+                  >
+                    <p style="width: 15vw">
+                        訂席中心即日起
+                        營業時間更改為10:00-19:00                        
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- NEWS2 -->
+              <div class="news2">
+                <div class="spin_pic2">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/10.png" alt="" />
+                  </div>
+                  <div class="spin2">
+                    <a href="./news_2_2.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <div class="new2_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">2021尊寵優惠方案</h2>
+                </div>
+                <div
+                  class="new2_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    尊寵優惠的各式套房。
+                  </p>
+                </div>
+              </div>
+  
+              <div class="news3">
+                <div class="spin_pic3">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/11.png" alt="" />
+                  </div>
+                  <div class="spin3">
+                    <a href="./news_2_3.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+  
+                <div class="new3_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">2021桃園住宿優惠</h2>
+                </div>
+                <div
+                  class="new3_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    六福村及小人國房間門票套餐。
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- roll one -->
+            <!-- roll two -->
+            <div class="row_two">
+              <div class="news1">
+                <!-- 旋轉圖區域 -->
+                <div class="spin_pic1">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/12.png" alt="" />
+                  </div>
+                  <div class="spin">
+                    <a href="./news_2_4.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <!-- 旋轉圖下方文字 -->
+                <div class="news1_words">
+                  <div class="new1_title" style="text-align: center">
+                    <h2 style="font-size: 1.5rem">外籍旅客個務退稅</h2>
+                  </div>
+                  <div
+                    class="new1_content"
+                    style="
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                    "
+                  >
+                    <p style="width: 15vw">
+                        適用對象：持有「非中華民國國籍之護照、無戶籍之中華民國護照及入出境證」者。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- NEWS2 -->
+              <div class="news2">
+                <div class="spin_pic2">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/13.png" alt="" />
+                  </div>
+                  <div class="spin2">
+                    <a href="./news_2_5.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <div class="new2_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">市民卡優惠</h2>
+                </div>
+                <div
+                  class="new2_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    持市民卡享有特定優惠。
+                  </p>
+                </div>
+              </div>
+  
+              <div class="news3">
+                <div class="spin_pic3">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/1.png" alt="" />
+                  </div>
+                  <div class="spin3">
+                    <a href="./news_2_6.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+  
+                <div class="new3_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">Happy GO快樂購卡</h2>
+                </div>
+                <div
+                  class="new3_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    享有停車、消費和點數累積的優惠。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- roll two -->
+            </div>
+            <!-- roll three -->
+            <div class="row_three">
+              <div class="news1">
+                <!-- 旋轉圖區域 -->
+                <div class="spin_pic1">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/15.png" alt="" />
+                  </div>
+                  <div class="spin">
+                    <a href="./news_2_7.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <!-- 旋轉圖下方文字 -->
+                <div class="news1_words">
+                  <div class="new1_title" style="text-align: center">
+                    <h2 style="font-size: 1.5rem">禁止性騷擾公告</h2>
+                  </div>
+                  <div
+                    class="new1_content"
+                    style="
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                    "
+                  >
+                    <p style="width: 15vw">
+                        古華，為您嚴格把關 ，提供免受性騷擾之服務環境。
+                    </p>
+                  </div>
+                          </div>
+
+                          
+              </div>
+              <!-- NEWS2 -->
+              <div class="news2">
+                <div class="spin_pic2">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/16.png" alt="" />
+                  </div>
+                  <div class="spin2">
+                    <a href="./news_2_8.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <div class="new2_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">防詐騙提醒公告</h2>
+                </div>
+                <div
+                  class="new2_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    本公司不會致電要求您提供信用卡帳號或銀行相關資料。
+                  </p>
+                </div>
+              </div>
+  
+              <div class="news3">
+                <div class="spin_pic3">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/18.png" alt="" />
+                  </div>
+                  <div class="spin3">
+                    <a href="./news_2_9.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+  
+                <div class="new3_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">隱私權和cookie政策</h2>
+                </div>
+                <div
+                  class="new3_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    隱私權政策聲明。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- roll three -->
+            </div>
+            </div> 
+          </div>
+          <!-- all news -->
+      </div>
+        <div class="new_rwd">
+          <div class="rone">
+            <div>
+              <a href="./news_2_2.html"><img src="./NEWS RWD/4.png" alt=""></a>
+              <h1>2021尊寵優惠方案</h1>
+              <p>尊寵優惠的各式套房。
+              </p>
+            </div>
+            <div>
+              <a href="./news_2_3.html"><img src="./NEWS RWD/5.png" alt=""></a>
+              <h1>2021桃園住宿優惠</h1>
+              <p>六福村及小人國房間門票套餐。</p>
+            </div>
+        </div>
+        <div class="rone">
+          <div>
+            <a href="./news_2_4.html"><img src="./NEWS RWD/6.png" alt=""></a>
+            <h1>外籍旅客個務退稅</h1>
+            <p>適用對象：持有「非中華民國國籍之護照、無戶籍之中華民國護照及入出境證」者。
+            </p>
+          </div>
+          <div>
+            <a href="./news_2_5.html"><img src="./NEWS RWD/7.png" alt=""></a>
+            <h1>市民卡優惠</h1>
+            <p>持市民卡享有特定優惠。</p>
+          </div>
+      </div>
+      <div class="rone">
+        <div>
+          <a href="./news_2_6.html"><img src="./NEWS RWD/1.png" alt=""></a>
+          <h1>Happy GO快樂購卡</h1>
+          <p>享有停車、消費和點數累積的優惠。
+          </p>
+        </div>
+        <div>
+          <a href="./news_2_7.html"><img src="./NEWS RWD/8.png" alt=""></a>
+          <h1>禁止性騷擾公告</h1>
+          <p>古華，為您嚴格把關 ，提供免受性騷擾之服務環境。</p>
+        </div>
+    </div>
+    <div class="rone">
+      <div>
+        <a href="./news_2_8.html"><img src="./NEWS RWD/9.png" alt=""></a>
+        <h1>防詐騙提醒公告</h1>
+        <p>本公司不會致電要求您提供信用卡帳號或銀行相關資料。
+        </p>
+      </div>
+      <div>
+        <a href="./news_2_9.html"><img src="./NEWS RWD/10.png" alt=""></a>
+        <h1>隱私權和cookie政策</h1>
+        <p>隱私權政策聲明。</p>
+      </div>
+  </div>
+  </div>
+      <div class="page">
+        <a href="./news_one.html" style="text-decoration: none;"><h1 style="color: black;">1</h1></a>
+        <h1 style="background-color:#64101F ; color: white;border-radius: 100px;">2</h1>
+        
+        
+      </div>
+      
+
+    </main>
+    <footer style="padding-top:40rem;"></footer>
+  </body>
+</html>

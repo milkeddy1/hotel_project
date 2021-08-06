@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./app.js" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="./app.js"></script>
+  </head>
+  <script>
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById("radio" + counter).checked = true;
+      counter++;
+      if (counter > 5) {
+        counter = 1;
+      }
+    }, 5000);
+
+    $(function () {
+      //美食區域
+      $(".food_pic1").mouseenter(function () {
+        $(".food_pic1").addClass("food_pic11");
+      });
+      $(".food_pic1").mouseleave(function () {
+        $(".food_pic1").removeClass("food_pic11");
+      });
+      $(".food_pic2").mouseenter(function () {
+        $(".food_pic2").addClass("food_pic22");
+      });
+      $(".food_pic2").mouseleave(function () {
+        $(".food_pic2").removeClass("food_pic22");
+      });
+      $(".food_pic3").mouseenter(function () {
+        $(".food_pic3").addClass("food_pic33");
+      });
+      $(".food_pic3").mouseleave(function () {
+        $(".food_pic3").removeClass("food_pic33");
+      });
+
+      // RWD
+      $(".burger").click(function () {
+        $(".main_menu").css("top", "0%");
+        $(".burger").empty();
+        $(".ctrl").removeClass("upperline");
+      });
+
+      $(".cross").click(function () {
+        $(".main_menu").css("top", "-100%");
+        $(".burger").append(
+          "<img id='open'src='https://img.onl/540BsM'style='width: 7vw; height: 5vw'/>"
+        );
+        $(".ctrl").addClass("upperline");
+      });
+    });
+
+    // RWD的部分
+  </script>
+
+  <body>
+    <header>
+      <!-- 選單 -->
+
+      <div class="nav" id="header">
+        <div>
+          <div class="nav_icon">
+            <a href="./index.html">
+              <img src="./home images/navpic.png" alt=""
+            /></a>
+          </div>
+          <div class="nav_bg">
+            <img
+              src="./home images/nav.png"
+              alt=""
+              style="width: 100vw; height: 5vw"
+            />
+            <img
+              src="https://img.onl/HyljuU"
+              alt=""
+              style="width: 100vw; height: 10vw"
+            />
+          </div>
+          <div class="nav_logo">
+            <a href="./index.html"
+              ><img
+                src="https://img.onl/8RlqPF"
+                alt=""
+                style="width: 10vw; height: 10 vw"
+            /></a>
+          </div>
+        </div>
+
+        <div class="burger">
+          <img
+            id="open"
+            src="https://img.onl/540BsM"
+            alt=""
+            style="width: 7vw; height: 5vw"
+          />
+        </div>
+        <div class="nav_words">
+          <ul class="main_menu" >
+            <div class="cross">
+              <img src="https://img.onl/7mMFyg" alt="" />
+            </div>
+            <!-- web navs -->
+            <!-- nav1 -->
+            <li class="web_navs">
+              <a href="./news_one.html" class="upperline ctrl">最新消息</a>
+            </li>
+            <!-- nav2 -->
+            <li class="web_navs">
+              <a href="./rooms.html" class="upperline ctrl">客房介紹</a>
+            </li>
+            <!-- nav3 -->
+            <li class="web_navs">
+              <a href="#" class="upperline ctrl">多元美食</a>
+
+              <ul class="sub_menu">
+                <li><a href="./food1.html">主題餐廳</a></li>
+                <li><a href="./food2.html">極品點心</a></li>
+                <li><a href="./food3.html">經典名酒</a></li>
+              </ul>
+            </li>
+            <!-- nav4 -->
+            <li class="web_navs">
+              <a href="#" class="upperline ctrl">設施服務</a>
+              <ul class="sub_menu">
+                <li class="sub_item">
+                  <a href="./facility1.html">婚宴場地</a>
+                </li>
+                <li class="sub_item">
+                  <a href="./facility2.html">會議場地</a>
+                </li>
+                <li class="sub_item">
+                  <a href="./facility3.html">健身中心</a>
+                </li>
+                <li class="sub_item">
+                  <a href="./facility4.html">商旅&服務</a>
+                </li>
+              </ul>
+            </li>
+            <!-- nav5 -->
+            <li class="web_navs">
+              <a
+                href="https://book-directonline.com/properties/kuvachateaudirect?locale=zh-TW&_ga=2.234570716.334702262.1626411400-231486264.1625108119&_gac=1.222174826.1626054102.Cj0KCQjwraqHBhDsARIsAKuGZeHvhIBDPvRmosh8RiSX3bZ6FsPRoMWGkmyZzd-KdyR6DUk_1pFfYrsaAo6YEALw_wcB&referrer=canvas&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=TWD&checkInDate=2021-07-16&checkOutDate=2021-07-17"
+                class="upperline ctrl"
+                >預約訂房</a
+              >
+            </li>
+            <!-- nav6 -->
+            <li class="web_navs">
+              <a href="#" class="upperline ctrl">主題專區</a>
+              <ul class="sub_menu">
+                <li><a href="./wine.html">古華酒藏</a></li>
+                <li><a href="./flowers.html">古華花藝</a></li>
+              </ul>
+            </li>
+            <!-- nav7 -->
+            <li class="web_navs">
+              <a href="./aboutus.html" class="upperline ctrl">關於我們</a>
+            </li>
+            <!-- nav8 -->
+            <li class="web_navs">
+              <a href="./contactus.html" class="upperline ctrl">聯絡我們</a>
+            </li>
+            <!-- RWD -->
+            <div>
+              
+            </div>
+            <div style="height: 100vh;">
+              <div class="rwd_navs">
+                  <label for="one"><a href="./news_one.html">最新消息</a></label>
+                <div>
+                  <input type="radio" name="navs" id="one" />
+                </div>
+                <label for="two"><a href="./rooms.html">客房介紹</a></label>
+                <div>
+                  <input type="radio" name="navs" id="two" />
+                </div>
+                <label for="three">多元美食</label>
+                <div>
+                  <input type="radio" name="navs" id="three" />
+                  <ul class="nav_content">
+                    <li><a href="./food1.html">主題餐廳</a></li>
+                    <li><a href="./food2.html">極品點心</a></li>
+                    <li><a href="./food3.html">經典名酒</a></li>
+                  </ul>
+                </div>
+                <label for="four">設施服務</label>
+                <div>
+                  <input type="radio" name="navs" id="four" />
+                  <ul class="nav_content">
+                    <li><a href="./facility1.html">婚宴場地</a></li>
+                    <li><a href="./facility2.html">會議場地</a></li>
+                    <li><a href="./facility3.html">健身中心</a></li>
+                    <li><a href="./facility4.html">商旅&服務</a></li>
+                  </ul>
+                </div>
+                <label for="five"><a href="https://book-directonline.com/properties/kuvachateaudirect?locale=zh-TW&_ga=2.234570716.334702262.1626411400-231486264.1625108119&_gac=1.222174826.1626054102.Cj0KCQjwraqHBhDsARIsAKuGZeHvhIBDPvRmosh8RiSX3bZ6FsPRoMWGkmyZzd-KdyR6DUk_1pFfYrsaAo6YEALw_wcB&referrer=canvas&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=TWD&checkInDate=2021-07-16&checkOutDate=2021-07-17">預約訂房</a></label>
+                <div>
+                  <input type="radio" name="navs" id="five" />
+                </div>
+                <label for="six">主題專區</label>
+                <div>
+                  <input type="radio" name="navs" id="six" />
+                  <ul class="nav_content">
+                    <li><a href="./wine.html">古華酒藏</a></li>
+                    <li><a href="./flowers/">古華花藝</a></a></li>
+                  </ul>
+                </div>
+                <label for="seven"><a href="./aboutus.html">關於我們</a></label>
+                <div>
+                  <input type="radio" name="navs" id="seven" />
+                </div>
+                <label for="eight"><a href="./contactus.html">聯絡我們</a></label>
+                <div>
+                  <input type="radio" name="navs" id="eight" />
+                </div>
+              </div>
+            </div>
+            
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 首頁本體 -->
+      <div class="container" id="home">
+        <!-- 輪播圖 -->
+        <div class="nav_pic_outer">
+          <div class="nav_pics_roll">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <input type="radio" name="radio-btn" id="radio5" />
+
+            <div class="slide first">
+              <img src="home images/background1.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="home images/background2.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="home images/background3.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="home images/background4.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="home images/background5.png" alt="" />
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+            </div>
+          </div>
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+          </div>
+        </div>
+        <!-- 輪播圖 -->
+        <!-- 最新消息container-->
+        <div class="news">
+          <!-- 最新消息title container -->
+          <div class="new_title">
+            <div class="thenews"><h2>NEWS</h2></div>
+            <div class="thenews"><h2 style="padding-bottom: 1rem;">最新消息</h2></div>
+          </div>
+          <!-- 最新消息內容web -->
+          <div class="new_details" data-aos="fade-right">
+            <!--NEWS1 -->
+            <div class="news1">
+              <!-- 旋轉圖區域 -->
+              <div class="spin_pic1">
+                <div
+                  class="news_pic1"
+                  style="display: flex; justify-content: center"
+                >
+                  <img src="./home images/公告.png" alt="" />
+                </div>
+                <div class="spin">
+                  <a href="./news_1_8.html"
+                    ><img src="./home images/icon.png" alt="" class="thespin"
+                  /></a>
+                </div>
+              </div>
+              <!-- 旋轉圖下方文字 -->
+              <div class="news1_words">
+                <div class="new1_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">防疫公告</h2>
+                </div>
+                <div
+                  class="new1_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    古華花園飯店配合政府各項防疫措施，提醒貴賓進入飯店各區域及在自助餐檯取餐時，請全程配戴口罩，並請於餐廳用餐時填寫
+                    。COVID-19防疫實聯制措施表單。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- NEWS2 -->
+            <div class="news2">
+              <div class="spin_pic2">
+                <div
+                  class="news_pic1"
+                  style="display: flex; justify-content: center"
+                >
+                  <img src="./home images/3.png" alt="" />
+                </div>
+                <div class="spin2">
+                  <a href="./news_1_4.html"
+                    ><img src="./home images/icon.png" alt="" class="thespin"
+                  /></a>
+                </div>
+              </div>
+              <div class="new2_title" style="text-align: center">
+                <h2 style="font-size: 1.5rem">【愛桃園限時住房】</h2>
+              </div>
+              <div
+                class="new2_content"
+                style="
+                  text-align: center;
+                  display: flex;
+                  justify-content: center;
+                "
+              >
+                <p style="width: 15vw">
+                  行政客房、精緻房、豪華房各式房型限時限量優惠價格。
+                </p>
+              </div>
+            </div>
+
+            <div class="news3">
+              <div class="spin_pic3">
+                <div
+                  class="news_pic1"
+                  style="display: flex; justify-content: center"
+                >
+                  <img src="./home images/4.png" alt="" />
+                </div>
+                <div class="spin3">
+                  <a href="./news_1_5.html"
+                    ><img src="./home images/icon.png" alt="" class="thespin"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="new3_title" style="text-align: center">
+                <h2 style="font-size: 1.5rem">【Rakuten住房專案】</h2>
+              </div>
+              <div
+                class="new3_content"
+                style="
+                  text-align: center;
+                  display: flex;
+                  justify-content: center;
+                "
+              >
+                <p style="width: 15vw">
+                  配合Rakuten主場球賽， 住宿及門票套票超優惠價格!!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 最新消息內容RWD -->
+          <div class="new_details_rwd" >
+            <div style="padding: 1rem; text-align: center">
+              <a href="./news_1_4.html"
+                ><img src="https://img.onl/3NXk0t" alt="" style="width: 40vw"
+              /></a>
+
+              <h3
+                style="
+                  border-bottom: 2px solid #64101f;
+                  padding: 0.5rem;
+                  height: 15vh;
+                "
+              >
+                【愛桃園限時限量住房專案】
+              </h3>
+              <p style="padding: 1rem">
+                行政客房、精緻房、豪華房各式房型限時限量優惠價格。
+              </p>
+            </div>
+            <div style="padding: 1rem; text-align: center">
+              <a href="./news_1_5.html">
+                <img src="https://img.onl/YWtEp3" alt="" style="width: 40vw"
+              /></a>
+
+              <h3
+                style="
+                  border-bottom: 2px solid #64101f;
+                  padding: 0.5rem;
+                  height: 15vh;
+                "
+              >
+                【Rakuten住房專案】
+              </h3>
+              <p style="padding: 1rem">
+                配合Rakuten主場球賽， 住宿及門票套票超優惠價格!!
+              </p>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center; height: 150px;">
+            <a href="./news_one.html"><div class="more">更多消息</div></a>
+          </div>
+        </div>
+        <!-- 最新消息 -->
+
+        <!-- 關於古華 -->
+        <div class="about" data-aos="fade-right" style="margin-top:1rem;">
+          <div class="about_title"><h1>關於古華</h1></div>
+          <div class="about_detail">
+            <div class="about_paper">
+              <img class="sheet_paper" src="./home images/paper_sheet_PNG7249.png" alt="" />
+            </div>
+            <div class="about_content">
+              <p
+                class="about_words"
+                
+              >
+                2012年10月，古華花園飯店以領先同業的高分之姿，通過交通部觀光局星級評鑑，成為南桃園第一家正式認證的五星級觀光飯店。
+                <br /><br />
+                在這裡，我們感謝所有曾經造訪古華的賓客，有您的支持與鼓勵，讓我們在每一次的接待中更加進步、茁壯。今後，古華仍會堅持在每一個服務細節上，用心多一點，貼心多一點，專業多一點，禮貌多一點，親切多一點，溫馨多一點，熱心多一點，微笑多一點，希望讓您每一次的到訪，都能感受到「以客為尊、以心為本」的5.1星級服務。
+                <br /><br />
+                走進古華花園飯店，就如走進遠離煩囂的寫意空間。以『古』風雅緻、『華』範尊榮為經營藍本，飯店整體設計擷取中式典雅與歐風富麗為精髓，綴出古典、溫馨、雅緻、華麗之風格。
+              </p>
+              <img class="about_pic" src="./home images/图像 10.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 多元美食 -->
+        <div class="food"  data-aos="fade-right">
+          <div class="food_title"><h1>多元美食</h1></div>
+
+          <div class="food_container">
+            <div class="food_pic1 food_pic">
+              <h1><a href="./food1.html">各式餐廳</a></h1>
+            </div>
+            <div class="food_pic2 food_pic">
+              <h1><a href="./food2.html">高級點心</a></h1>
+            </div>
+            <div class="food_pic3 food_pic">
+              <h1><a href="./food3.html">經典名酒</a></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="surrounds" data-aos="fade-right">
+        <div class="surrounds_title">
+          <h1>周邊景點</h1>
+        </div>
+        <div class="surrounds_content">
+          <p>
+            在古華，你們能盡情休息、放鬆。<br /><br />
+            休息夠了，<br /><br />
+            你可以選擇去與<span>大溪花海農場</span>與大自然接觸、<br><br>
+            去知名的購物中心像是<span>華泰名品城、大江購物中心</span>逛街、<br><br>
+            帶小朋友去<span>六福村、小人國</span>玩、<br><br>
+            甚至是在夜晚能夠選擇到<span>中壢夜市</span>或是<span>中原夜市</span> 
+          </p>
+        </div>
+        <div class="surrounds_places">
+        
+
+          <div class="surround_pics">
+            <ul>
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="./home images/surround1.png" alt="" />
+                  </figure>
+                  <figcaption>
+                    中壢觀光夜市 Zhongli Xinming Night Market
+                  </figcaption>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="./home images/surround2.png" alt="" />
+                  </figure>
+                  <figcaption>中原夜市 Zhongyuan Night Market</figcaption>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="./home images/surround3.png" alt="" />
+                  </figure>
+                  <figcaption>
+                    小人國主題樂園 Window on China Theme Park
+                  </figcaption>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="./home images/surround4.png" alt="" />
+                  </figure>
+                  <figcaption><p>華泰名品成 GLORIA OUTLETS</p></figcaption>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="./home images/surround5.png" alt="" />
+                  </figure>
+                  <figcaption>
+                    大江國際購物中心 MetroWalk Shopping Center
+                  </figcaption>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="./home images/surround6.png" alt="" />
+                  </figure>
+                  <figcaption>大溪花海農場 Ta Shee Blooming Oasis</figcaption>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="./home images/surround7.png" alt="" />
+                  </figure>
+                  <figcaption>六福村 Leofoo Village Theme Park</figcaption>
+                </a>
+              </li>
+              <!-- 重複部分 -->
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="./home images/surround1.png" alt="" />
+                  </figure>
+                  <figcaption>
+                    中壢觀光夜市 Zhongli Xinming Night Market
+                  </figcaption>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="https://img.onl/mZT3R6" alt="" />
+                  </figure>
+                  <figcaption>中原夜市 Zhongyuan Night Market</figcaption>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <figure>
+                    <img src="https://img.onl/nH4ZRk" alt="" />
+                  </figure>
+                  <figcaption>
+                    小人國主題樂園 Window on China Theme Park
+                  </figcaption>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 以上為周邊景點 -->
+      </div>
+
+      <!-- container -->
+    </main>
+    <footer>
+      <div class="gotop">
+        <a href="#home" style="padding-top: 0.5rem"
+          ><img src="./home images/组 22.png" alt=""
+        /></a>
+      </div>
+      <div class="contact">
+        <div class="contact_content">
+          <p>320桃園市中壢區民權路398號</p>
+          <br />
+          <p>
+            No.398, Minquan Rd., Zhongli Dist., Taoyuan City, 320015, Taiwan
+          </p>
+          <br />
+          <p>+886-3-281-1818</p>
+          <br />
+          <p>+886-3-281-2626</p>
+          <br />
+          <p>hotel@kuva-chateau.com.tw</p>
+        </div>
+        <div class="contact_icon">
+          <a href="https://www.facebook.com/hotelkuva"
+            ><img src="./home images/Icon awesome-facebook.png" alt=""
+          /></a>
+          <a href="https://www.youtube.com/user/kuvachateau"
+            ><img src="./home images/Icon awesome-youtube.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/hotelkuvachateau/"
+            ><img src="./home images/Icon feather-instagram.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="./style_rooms.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 class="title_one" style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 class="title_two" style="width: 80vw;">最新消息</h1>
+            </div>
+        </div>
+
+        <!-- rooms web-->
+        <div class="all">
+          <!-- room1 -->
+          <div class="room">
+            <div class="room_pic"><img src="./rooms/1.png" alt="" /></div>
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2>行政客房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                  每間都有對外視窗，各有獨具歐風與融合中國風的空間設計，
+                  典雅悅目的各式家具，將優雅尊貴的房間設計重心表現得淋漓盡致。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>42英寸LED電視</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- room2 -->
+          <div class="room">
+           
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2>豪華客房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                    每間都有對外視窗，以典雅悅目的各式傢俱，將優雅尊貴的房間設計重心表現得淋漓盡致。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>42英寸LED電視</p>
+                </div>
+              </div>
+            </div>
+            <div class="room_pic"><img src="./rooms/2.png" alt="" /></div>
+          </div>
+          <!-- room3 -->
+          <div class="room">
+            <div class="room_pic"><img src="./rooms/3.png" alt="" /></div>
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2>儷景客房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                    以中西混搭的設計呈現出華麗雅緻的風格，全室二面窗的絕佳景致和採光，不僅能帶入自然光線，更能將城市美景盡收眼底。另有無障礙房，提供身心障礙者便利與貼心的設施。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>42英寸LED電視</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- room4 -->
+          <div class="room">
+           
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2>風呂客房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                    經典優雅的風呂房型，配備有獨立的泡湯按摩池。專屬貼心設備和靜謐的住宿環境，彷彿來到世外桃源般的感受。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-bathtub-96.png" alt="" />
+                  <p>超音波網求按摩浴池</p>
+                </div>
+              </div>
+            </div>
+            <div class="room_pic"><img src="./rooms/4.png" alt="" /></div>
+          </div>
+          <!-- room5 -->
+          <div class="room">
+            <div class="room_pic"><img src="./rooms/5.png" alt="" /></div>
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2>精緻雙人房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                    每間都有對外視窗，以典雅悅目的各式家具，將優雅尊貴的房間設計重心表現得淋漓盡致。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>32寸液晶電視</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- room6 -->
+          <div class="room">
+           
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2> 豪華雙床房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                    雙大床具現代感特色的設計，配合精美齊全的傢俱更是相得益彰，在閒暇時眺望窗外的公園景觀，感受身心靈的舒暢與提升。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>37吋LCD電視</p>
+                </div>
+              </div>
+            </div>
+            <div class="room_pic"><img src="./rooms/6.png" alt="" /></div>
+          </div>
+          <!-- room7 -->
+          <div class="room">
+            <div class="room_pic"><img src="./rooms/7.png" alt="" /></div>
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2>精緻套房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                    具現代感特色的設計，配合精美齊全的傢俱更是相得益彰，在閒暇時眺望窗外的公園景觀，感受身心靈的舒暢與提升。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>高畫質Full HD付費電影</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>37吋LCD電視</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- room8 -->
+          <div class="room">
+           
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2>外交官套房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                    各具特色的設計，配合精美齊全的中、西傢俱更是相得益彰，無論家人共聚或簡單的商務會議都非常適合。其中唯一的畢卡索套房，更是經典。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>高畫質Full HD付費電影</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>42英寸LED電視</p>
+                </div>
+              </div>
+            </div>
+            <div class="room_pic"><img src="./rooms/8.png" alt="" /></div>
+          </div>
+          <!-- room9 -->
+          <div class="room">
+            <div class="room_pic"><img src="./rooms/9.png" alt="" /></div>
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2>首相套房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                    中西合併的優雅設計。臥室以皇家豹紋展現奢華，客廳包括金色沙發、書桌以及一張可坐四人的歐洲古典圓形餐桌，不論接待客人或小型餐會均體面大方，令下榻的住客皆倍感尊榮。 
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>高畫質Full HD付費電影</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>42英寸LED電視</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- room10 -->
+          <div class="room">
+           
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2>古華套房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p style="width: 20vw; margin: 0 auto">
+                    有如皇家一般優雅溫馨的舒適空間。室內設計結合中式與歐式風格，中國古董吊燈、英國古董櫃、中國禪椅與歐式沙發，古今輝映中外結合，絕對不同凡響的總統級套房體驗。  
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>42英寸LED電視</p>
+                </div>
+              </div>
+            </div>
+            <div class="room_pic"><img src="./rooms/2.png" alt="" /></div>
+          </div>
+      </div>
+ <!--rooms rwd -->
+ <div >
+<div class="all_rwd">
+        
+
+        
+        <!-- room1 -->
+        <div class="room">
+          <div style="display: flex;justify-content: center;" class="room_pic"><img src="./rooms/1.png" alt="" /></div>
+        <div style="display: flex;justify-content: center;">
+          <div class="room_content" >
+            <div
+              style="
+                padding-bottom: 2rem;
+                border-bottom: 4px solid #64101f;
+                font-size: 1rem;
+              
+                
+              "
+            >
+              <h2 style="text-align: center;">行政客房</h2>
+            </div>
+            <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+              <p class="content" style="margin: 0 auto">
+                每間都有對外視窗，各有獨具歐風與融合中國風的空間設計，
+                典雅悅目的各式家具，將優雅尊貴的房間設計重心表現得淋漓盡致。
+              </p>
+            </div>
+            <div class="icons">
+              <div style="display: flex">
+                <img src="./rooms/icons8-phone-96.png" alt="" />
+                <p>房間餐飲服務</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-shower-96.png" alt="" />
+                <p>乾濕分離衛浴</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                <p>冰箱及迷你酒吧</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                <p>浴室中同步收聽電視與廣播</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                <p>燙褲機，曬衣繩</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-tv-96.png" alt="" />
+                <p>42英寸LED電視</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+        <!-- room2 -->
+        <div class="room">
+          <div class="room_pic" style="display:flex;justify-content: center;" ><img src="./rooms/2.png" alt="" /></div>
+          <div style="display: flex; justify-content: center;">
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2 style="text-align:center">豪華客房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p class="content" style="margin: 0 auto">
+                    每間都有對外視窗，以典雅悅目的各式傢俱，將優雅尊貴的房間設計重心表現得淋漓盡致。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>42英寸LED電視</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          
+        </div>
+        <!-- room3 -->
+        <div class="room">
+          <div class="room_pic" style="display: flex; justify-content: center;"><img src="./rooms/3.png" alt="" /></div>
+          <div style="display: flex; justify-content: center;">
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2 style="text-align: center;">儷景客房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p class="content" style="margin: 0 auto">
+                    以中西混搭的設計呈現出華麗雅緻的風格，全室二面窗的絕佳景致和採光，不僅能帶入自然光線，更能將城市美景盡收眼底。另有無障礙房，提供身心障礙者便利與貼心的設施。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>42英寸LED電視</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- room4 -->
+        <div class="room">
+          <div class="room_pic" style="display: flex;justify-content: center;"><img src="./rooms/4.png" alt="" /></div>
+          <div style="display: flex;justify-content: center;">
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2 style="text-align: center;">風呂客房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p class="content" style="margin: 0 auto">
+                    經典優雅的風呂房型，配備有獨立的泡湯按摩池。專屬貼心設備和靜謐的住宿環境，彷彿來到世外桃源般的感受。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-bathtub-96.png" alt="" />
+                  <p>超音波網求按摩浴池</p>
+                </div>
+              </div>
+          </div>
+         
+          </div>
+         
+        </div>
+        <!-- room5 -->
+        <div class="room">
+          <div style="display:flex;justify-content: center;" class="room_pic"><img src="./rooms/5.png" alt="" /></div>
+          <div style="display: flex;justify-content: center;">
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2 style="text-align: center;">精緻雙人房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p class="content" style="margin: 0 auto">
+                    每間都有對外視窗，以典雅悅目的各式家具，將優雅尊貴的房間設計重心表現得淋漓盡致。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>32寸液晶電視</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- room6 -->
+        <div class="room">
+          <div style="display: flex;justify-content: center;" class="room_pic"><img src="./rooms/6.png" alt="" /></div>
+          <div style="display: flex;justify-content: center;">
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2 style="text-align: center;"> 豪華雙床房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p class="content" style="margin: 0 auto">
+                    雙大床具現代感特色的設計，配合精美齊全的傢俱更是相得益彰，在閒暇時眺望窗外的公園景觀，感受身心靈的舒暢與提升。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>浴室中同步收聽電視與廣播</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>37吋LCD電視</p>
+                </div>
+              </div>
+          </div>
+          
+          </div>
+          
+        </div>
+        <!-- room7 -->
+        <div class="room">
+          <div style="display: flex; justify-content: center;" class="room_pic"><img src="./rooms/7.png" alt="" /></div>
+          <div style="justify-content: center;display: flex;">
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2 style="text-align: center;">精緻套房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p class="content" style="margin: 0 auto">
+                    具現代感特色的設計，配合精美齊全的傢俱更是相得益彰，在閒暇時眺望窗外的公園景觀，感受身心靈的舒暢與提升。
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>高畫質Full HD付費電影</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>37吋LCD電視</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <!-- room8 -->
+        <div class="room">
+          <div style="display: flex;justify-content: center;" class="room_pic"><img src="./rooms/8.png" alt="" /></div>
+            <div style="display: flex;justify-content: center;">
+              <div class="room_content">
+                <div
+                  style="
+                    padding-bottom: 2rem;
+                    border-bottom: 4px solid #64101f;
+                    font-size: 1rem;
+                  "
+                >
+                  <h2 style="text-align: center;">外交官套房</h2>
+                </div>
+                <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                  <p class="content" style="margin: 0 auto">
+                      各具特色的設計，配合精美齊全的中、西傢俱更是相得益彰，無論家人共聚或簡單的商務會議都非常適合。其中唯一的畢卡索套房，更是經典。
+                  </p>
+                </div>
+                <div class="icons">
+                  <div style="display: flex">
+                    <img src="./rooms/icons8-phone-96.png" alt="" />
+                    <p>房間餐飲服務</p>
+                  </div>
+                  <div style="display: flex">
+                    <img src="./rooms/icons8-shower-96.png" alt="" />
+                    <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                  </div>
+                  <div style="display: flex">
+                    <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                    <p>冰箱及迷你酒吧</p>
+                  </div>
+                  <div style="display: flex">
+                    <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                    <p>高畫質Full HD付費電影</p>
+                  </div>
+                  <div style="display: flex">
+                    <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                    <p>燙褲機，曬衣繩</p>
+                  </div>
+                  <div style="display: flex">
+                    <img src="./rooms/icons8-tv-96.png" alt="" />
+                    <p>42英寸LED電視</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+         
+          
+        </div>
+        <!-- room9 -->
+        <div class="room">
+          <div style="display: flex; justify-content: center;" class="room_pic"><img src="./rooms/9.png" alt="" /></div>
+          <div style="display: flex;justify-content: center;">
+            <div class="room_content">
+              <div
+                style="
+                  padding-bottom: 2rem;
+                  border-bottom: 4px solid #64101f;
+                  font-size: 1rem;
+                "
+              >
+                <h2 style="text-align: center;" >首相套房</h2>
+              </div>
+              <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+                <p class="content" style="margin: 0 auto">
+                    中西合併的優雅設計。臥室以皇家豹紋展現奢華，客廳包括金色沙發、書桌以及一張可坐四人的歐洲古典圓形餐桌，不論接待客人或小型餐會均體面大方，令下榻的住客皆倍感尊榮。 
+                </p>
+              </div>
+              <div class="icons">
+                <div style="display: flex">
+                  <img src="./rooms/icons8-phone-96.png" alt="" />
+                  <p>房間餐飲服務</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-shower-96.png" alt="" />
+                  <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                  <p>冰箱及迷你酒吧</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                  <p>高畫質Full HD付費電影</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                  <p>燙褲機，曬衣繩</p>
+                </div>
+                <div style="display: flex">
+                  <img src="./rooms/icons8-tv-96.png" alt="" />
+                  <p>42英寸LED電視</p>
+                </div>
+              </div>
+          </div>
+          
+          
+        </div>
+        
+        
+      </div>
+      <!-- room10 -->
+      <div class="room">
+        <div style="display: flex; justify-content: center;" class="room_pic"><img src="./rooms/2.png" alt="" /></div>
+        <div style="display: flex;justify-content: center;">
+          <div class="room_content">
+            <div
+              style="
+                padding-bottom: 2rem;
+                border-bottom: 4px solid #64101f;
+                font-size: 1rem;
+              "
+            >
+              <h2 style="text-align: center;">古華套房</h2>
+            </div>
+            <div style="padding: 1rem 0; border-bottom: 4px solid #64101f">
+              <p class="content" style="margin: 0 auto">
+                  有如皇家一般優雅溫馨的舒適空間。室內設計結合中式與歐式風格，中國古董吊燈、英國古董櫃、中國禪椅與歐式沙發，古今輝映中外結合，絕對不同凡響的總統級套房體驗。  
+              </p>
+            </div>
+            <div class="icons">
+              <div style="display: flex">
+                <img src="./rooms/icons8-phone-96.png" alt="" />
+                <p>房間餐飲服務</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-shower-96.png" alt="" />
+                <p>乾濕分離衛浴、歐舒丹沐浴用品</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-fridge-96 (1).png" alt="" />
+                <p>冰箱及迷你酒吧</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-retro-tv-96.png" alt="" />
+                <p>浴室中同步收聽電視與廣播</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-hair-dryer-96.png" alt="" />
+                <p>燙褲機，曬衣繩</p>
+              </div>
+              <div style="display: flex">
+                <img src="./rooms/icons8-tv-96.png" alt="" />
+                <p>42英寸LED電視</p>
+              </div>
+            </div>
+        </div>
+       
+        </div>
+       
+      </div>
+    </div>
+ </div>
+      
+      <!-- rooms -->
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

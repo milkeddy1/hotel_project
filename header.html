@@ -1,0 +1,181 @@
+<script src="./jquery-3.3.1.min.js"></script>
+<script>
+  $(function () {
+    $(".burger").click(function () {
+      $(".main_menu").css("top", "0%");
+      $(".burger").empty();
+      $(".ctrl").removeClass("upperline");
+    });
+
+    $(".cross").click(function () {
+      $(".main_menu").css("top", "-150%");
+      $(".burger").append(
+        "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+      );
+      $(".ctrl").addClass("upperline");
+    });
+  });
+</script>
+<div style="position: absolute" id="home"></div>
+<div class="nav">
+  <div>
+    <div class="nav_icon">
+      <a href="./index.html"> <img src="./home images/navpic.png" alt="" /></a>
+    </div>
+    <div class="nav_bg">
+      <img
+        src="./home images/nav.png"
+        alt=""
+        style="width: 100vw; height: 5vw"
+      />
+      <img
+        src="./home images/nav.png"
+        alt=""
+        style="width: 100vw; height: 10vw"
+      />
+    </div>
+    <div class="nav_logo">
+      <a href="./index.html"
+        ><img
+          src="./RWD/homepage/26.png"
+          alt=""
+          style="width: 10vw; height: 10 vw"
+      /></a>
+    </div>
+  </div>
+
+  <div class="burger">
+    <img
+      id="open"
+      src="./RWD/homepage/Icon ionic-md-menu.png"
+      alt=""
+      style="width: 7vw; height: 5vw"
+    />
+  </div>
+  <div class="nav_words">
+    <ul class="main_menu">
+      <div class="cross">
+        <img src="./RWD/homepage/cross.png" alt="" />
+      </div>
+      <!-- web navs -->
+      <!-- nav1 -->
+      <li class="web_navs">
+        <a href="./news_one.html" class="upperline ctrl">最新消息</a>
+      </li>
+      <!-- nav2 -->
+      <li class="web_navs">
+        <a href="./rooms.html" class="upperline ctrl">客房介紹</a>
+      </li>
+      <!-- nav3 -->
+      <li class="web_navs">
+        <a href="#" class="upperline ctrl">多元美食</a>
+
+        <ul class="sub_menu">
+          <li><a href="./food1.html">主題餐廳</a></li>
+          <li><a href="./food2.html">極品點心</a></li>
+          <li><a href="./food3.html">經典名酒</a></li>
+        </ul>
+      </li>
+      <!-- nav4 -->
+      <li class="web_navs">
+        <a href="#" class="upperline ctrl">設施服務</a>
+        <ul class="sub_menu">
+          <li class="sub_item">
+            <a href="./facility1.html">婚宴場地</a>
+          </li>
+          <li class="sub_item">
+            <a href="./facility2.html">會議場地</a>
+          </li>
+          <li class="sub_item">
+            <a href="./facility3.html">健身中心</a>
+          </li>
+          <li class="sub_item">
+            <a href="./facility4.html">商旅&服務</a>
+          </li>
+        </ul>
+      </li>
+      <!-- nav5 -->
+      <li class="web_navs">
+        <a
+          href="https://book-directonline.com/properties/kuvachateaudirect?locale=zh-TW&_ga=2.234570716.334702262.1626411400-231486264.1625108119&_gac=1.222174826.1626054102.Cj0KCQjwraqHBhDsARIsAKuGZeHvhIBDPvRmosh8RiSX3bZ6FsPRoMWGkmyZzd-KdyR6DUk_1pFfYrsaAo6YEALw_wcB&referrer=canvas&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=TWD&checkInDate=2021-07-16&checkOutDate=2021-07-17"
+          class="upperline ctrl"
+          >預約訂房</a
+        >
+      </li>
+      <!-- nav6 -->
+      <li class="web_navs">
+        <a href="#" class="upperline ctrl">主題專區</a>
+        <ul class="sub_menu">
+          <li><a href="./wine.html">古華酒藏</a></li>
+          <li><a href="./flowers.html">古華花藝</a></li>
+        </ul>
+      </li>
+      <!-- nav7 -->
+      <li class="web_navs">
+        <a href="./aboutus.html" class="upperline ctrl">關於我們</a>
+      </li>
+      <!-- nav8 -->
+      <li class="web_navs">
+        <a href="./contactus.html" class="upperline ctrl">聯絡我們</a>
+      </li>
+      <!-- RWD -->
+      <div></div>
+      <div style="height: 100vh">
+        <div class="rwd_navs">
+          <label for="one"><a href="./news_one.html">最新消息</a></label>
+          <div>
+            <input type="radio" name="navs" id="one" />
+          </div>
+          <label for="two"><a href="./rooms.html">客房介紹</a></label>
+          <div>
+            <input type="radio" name="navs" id="two" />
+          </div>
+          <label for="three">多元美食</label>
+          <div>
+            <input type="radio" name="navs" id="three" />
+            <ul class="nav_content">
+              <li><a href="./food1.html">主題餐廳</a></li>
+              <li><a href="./food2.html">極品點心</a></li>
+              <li><a href="./food3.html">經典名酒</a></li>
+            </ul>
+          </div>
+          <label for="four">設施服務</label>
+          <div>
+            <input type="radio" name="navs" id="four" />
+            <ul class="nav_content">
+              <li><a href="./facility1.html">婚宴場地</a></li>
+              <li><a href="./facility2.html">會議場地</a></li>
+              <li><a href="./facility3.html">健身中心</a></li>
+              <li><a href="./facility4.html">商旅&服務</a></li>
+            </ul>
+          </div>
+          <label for="five"
+            ><a
+              href="https://book-directonline.com/properties/kuvachateaudirect?locale=zh-TW&_ga=2.234570716.334702262.1626411400-231486264.1625108119&_gac=1.222174826.1626054102.Cj0KCQjwraqHBhDsARIsAKuGZeHvhIBDPvRmosh8RiSX3bZ6FsPRoMWGkmyZzd-KdyR6DUk_1pFfYrsaAo6YEALw_wcB&referrer=canvas&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=TWD&checkInDate=2021-07-16&checkOutDate=2021-07-17"
+              >預約訂房</a
+            ></label
+          >
+          <div>
+            <input type="radio" name="navs" id="five" />
+          </div>
+          <label for="six">主題專區</label>
+          <div>
+            <input type="radio" name="navs" id="six" />
+            <ul class="nav_content">
+              <li><a href="./wine.html">古華酒藏</a></li>
+              <li><a href="./flowers.html">古華花藝</a></li>
+            </ul>
+          </div>
+          <label for="seven"><a href="./aboutus.html">關於我們</a></label>
+          <div>
+            <input type="radio" name="navs" id="seven" />
+          </div>
+          <label for="eight"><a href="./contactus.html">聯絡我們</a></label>
+          <div>
+            <input type="radio" name="navs" id="eight" />
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>

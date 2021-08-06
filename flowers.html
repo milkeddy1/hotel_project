@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLOWERS</title>
+    <link rel="stylesheet" href="./style_theme2.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css" />
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+        $("header").load("header.html");
+        //footer
+        $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- title -->
+
+      <div>
+        <div class="news_title">
+          <h1 class="en_title">THEME</h1>
+        </div>
+        <div class="news_title">
+          <h1 class="chinese_title" style="width: 80vw">主題專區</h1>
+        </div>
+        <div class="sub_title">
+          <h1>古華花藝</h1>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="web">
+        <div class="all">
+          <div class="detail">
+            <div class="items">
+              <div class="one">
+                <div class="one_front"></div>
+                <div class="one_back">
+                  <p style="text-align: left; line-height: 1rem">
+                    橙紅金暖 <br /><br />
+
+                    用鲜艶的花朵<br />
+                    為心情潻增亮彩<br />
+                    只要懷著希望<br />
+                    總會等到春暖花開<br /><br />
+
+                    (花材：木賊、紅薑花、向日葵、孤挺花、千代蘭、大理花、星辰花、八角)
+                  </p>
+                </div>
+              </div>
+
+              <div class="two">
+                <div class="two_front"></div>
+                <div class="two_back">
+                  <p style="text-align: left; line-height: 1rem">
+                    春天來了 綠意盎然 <br /><br />
+
+                    美好的事物都將如期而至<br />
+                    送一個春天給你<br />
+                    願世界和平<br />
+                    你我皆好<br /><br />
+
+                    (花材：翡翠粉玫瑰、大濱菊、荷蘭菊、白金魚草、黃金魚草、唐棉、大東亞蘭麒麟草)
+                  </p>
+                </div>
+              </div>
+
+              <div class="three">
+                <div class="three_front"></div>
+                <div class="three_back">
+                  <p style="text-align: left; line-height: 1rem">
+                    春 <br /><br />
+
+                    春水初生<br />
+                    春林初盛<br />
+                    春風十里，不如你<br />
+                    《馮唐》<br /><br />
+
+                    (花材：粉色麵線菊、進口虎頭蘭、百合花、櫻花、水燭葉、扁柏、八角金盤葉、山蘇葉)
+                  </p>
+                </div>
+              </div>
+
+              <div class="four">
+                <div class="four_front"></div>
+                <div class="four_back">
+                  <p style="text-align: left; line-height: 1rem">
+                    銀花火樹 <br /><br />
+
+                    銀花萬簇迎金鼠<br />
+                    火樹千株展玉龍<br /><br />
+
+                    (花材：大菊煙火、火炬、百合、四季秋海棠、雪柳、雞冠花、八角金盤、扁柏、尤加利葉、五葉松、梔子葉)
+                  </p>
+                </div>
+              </div>
+
+              <div class="five">
+                <div class="five_front"></div>
+                <div class="five_back">
+                  <p style="text-align: left; line-height: 1rem">
+                    金鼠報福 <br />
+                    <br />
+
+                    新春祝賀聲聲道 <br />
+                    鼠到福到好運到 <br />
+                    <br />
+
+                    (花材：芙蓉茶花、葉牡丹、大金菊、火鶴花、百合花、腎藥蘭、金色諾貝松、八角金盤、麵線粉菊、翠菊、鳳梨花、山蘇葉)
+                  </p>
+                </div>
+              </div>
+
+              <div class="six">
+                <div class="six_front"></div>
+                <div class="six_back">
+                  <p style="text-align: left; line-height: 1rem">
+                    希望 <br />
+                    <br />
+
+                    送走厚實的一年 <br />
+                    期盼新穎的開始 <br />
+                    花彩繽紛 <br />
+                    散發希望 <br />
+                    蘊含祝福 <br />
+                    <br />
+
+                    (花材：南天竹、東亞蘭、萬代蘭、玫瑰百合、金鑽鳳梨、綠石竹、雞冠花、鵝掌菓、賜楠菓、火鹤、楠柏)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rwd">
+        <div>
+          <img src="./flowers/a.png" alt="" />
+          <p>
+            橙紅金暖<br />
+            用鲜艶的花朵 為心情潻增亮彩 只要懷著希望 總會等到春暖花開
+            (花材：木賊、紅薑花、向日葵、孤挺花、千代蘭、大理花、星辰花、八角)
+          </p>
+        </div>
+        <div>
+          <p>
+            春天來了 綠意盎然<br />
+            美好的事物都將如期而至 送一個春天給你 願世界和平 你我皆好
+            (花材：翡翠粉玫瑰、大濱菊、荷蘭菊、白金魚草、黃金魚草、唐棉、大東亞蘭麒麟草)
+          </p>
+          <img src="./flowers/b.png" alt="" />
+        </div>
+        <div>
+          <img src="./flowers/c.png" alt="" />
+          <p>
+            春 <br />
+
+            春水初生 春林初盛 春風十里，不如你 《馮唐》
+            (花材：粉色麵線菊、進口虎頭蘭、百合花、櫻花、水燭葉、扁柏、八角金盤葉、山蘇葉)
+          </p>
+        </div>
+        <div>
+          <p>
+            銀花火樹 <br />
+
+            銀花萬簇迎金鼠 火樹千株展玉龍
+            (花材：大菊煙火、火炬、百合、四季秋海棠、雪柳、雞冠花、八角金盤、扁柏、尤加利葉、五葉松、梔子葉)
+          </p>
+          <img src="./flowers/d.png" alt="" />
+        </div>
+        <div>
+          <img src="./flowers/e.png" alt="" />
+          <p>
+            金鼠報福 <br />
+
+            新春祝賀聲聲道 鼠到福到好運到
+            (花材：芙蓉茶花、葉牡丹、大金菊、火鶴花、百合花、腎藥蘭、金色諾貝松、八角金盤、麵線粉菊、翠菊、鳳梨花、山蘇葉)
+          </p>
+        </div>
+        <div>
+          <p>
+            希望 <br />
+
+            送走厚實的一年 期盼新穎的開始 花彩繽紛 散發希望 蘊含祝福
+            (花材：南天竹、東亞蘭、萬代蘭、玫瑰百合、金鑽鳳梨、綠石竹、雞冠花、鵝掌菓、賜楠菓、火鹤、楠柏)
+          </p>
+          <img src="./flowers/f.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

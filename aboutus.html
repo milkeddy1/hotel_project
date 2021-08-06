@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="./aboutus.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css" />
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+        $("header").load("header.html");
+        //footer
+        $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <div class="news_title">
+          <h1 class="en_title">About us</h1>
+        </div>
+        <div class="news_title">
+          <h1 class="chinese_title" style="width: 80vw">關於我們</h1>
+        </div>
+      </div>
+
+      <div class="all">
+        <div class="detail">
+          <img src="https://img.onl/rFCRu5" alt="" class="pic1" />
+        </div>
+
+        <div class="detail">
+          <p style="width: 80vw; display: flex">
+            2012年10月，古華花園飯店以領先同業的高分之姿，通過交通部觀光局星級評鑑，成為南桃園第一家正式認證的五星級觀光飯店。<br />
+            <br />
+            在這裡，我們感謝所有曾經造訪古華的賓客，有您的支持與鼓勵，讓我們在每一次的接待中更加進步、茁壯。<br />
+            今後，古華仍會堅持在每一個服務細節上，用心多一點，貼心多一點，專業多一點，禮貌多一點，親切多一點，溫馨多一點，熱心多一點，微笑多一點，希望讓您每一次的到訪，都能感受到「以客為尊、以心為本」的5.1星級服務。
+          </p>
+        </div>
+        <div class="detail">
+          <h1>獨特的風格</h1>
+        </div>
+        <div class="detail">
+          <p style="width: 80vw">
+            走進古華花園飯店，就如走進遠離煩囂的寫意空間。以『古』風雅緻、『華』範尊榮為經營藍本，飯店整體設計擷取中式典雅與歐風富麗為精髓，綴出古典、溫馨、雅緻、華麗之風格。
+          </p>
+        </div>
+        <div class="detail"><img src="https://img.onl/VVRrY4" alt="" /></div>
+        <div class="detail"><h1>因你們而更美麗</h1></div>
+        <div class="detail">
+          <p style="width: 80vw">
+            古華花園飯店為桃園市中壢區的首座觀光級飯店，飯店前有2萬坪綠意盎然的光明公園及中壢國民運動中心，緊鄰中壢及中原觀光夜市、中壢SOGO百貨、中壢站前商圈(中平商圈)、中央大學、大江國際購物中心、中壢工業園區及桃園國際棒球場，得天獨厚的地理位置是民眾出差洽公、踏青旅遊的住宿及用餐首選。
+          </p>
+        </div>
+        <div class="detail">
+          <img
+            src="
+          https://img.onl/ciEtoN
+          "
+            alt=""
+          />
+        </div>
+        <div class="detail">
+          <h1>別緻的美食</h1>
+        </div>
+        <div class="detail">
+          <p style="width: 80vw">
+            古華花園飯店為呈現大中華料理的色香味精髓，由專業名廚群以精湛手藝，打造東方美食殿堂。料理強調健康飲食，名廚施展巧手將當季食材變成一道道創意中式料理，美食魅力，誘人大動食指。
+          </p>
+        </div>
+        <div class="detail"><img src="https://img.onl/6z7vv0" alt="" /></div>
+        <div class="detail"><h1>安居樂俗</h1></div>
+        <div class="detail">
+          <p style="width: 80vw">
+            飯店提供255間客房，包括古華套房(33坪)、首相套房(22坪)、外交官套房(17坪)、精緻套房(17坪)、豪華雙床房(16坪)、儷景客房(14坪)、精緻雙床房(13坪)、豪華客房(13坪)及行政客房(11坪)等房型，每間均以中式典雅與歐風華麗風格交叉呈現，而樓層間別具匠心陳設古董的大器風範，更讓人深刻體會古華居住美學的意涵。
+          </p>
+        </div>
+        <div class="detail"><img src="https://img.onl/8Gzu6S" alt="" /></div>
+      </div>
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facilities</title>
+    <link rel="stylesheet" href="./style_facility.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css" />
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+        $("header").load("header.html");
+        //footer
+        $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <div class="news_title">
+          <h1 class="en_title">facility & service</h1>
+        </div>
+        <div class="news_title">
+          <h1 class="chinese_title" style="width: 80vw">設施服務</h1>
+        </div>
+        <div class="sub_title">
+          <h1>婚宴場地</h1>
+        </div>
+      </div>
+      <!-- 內文 -->
+      <div class="all">
+        <div class="detail">
+          <h1 style="width: 30vw; text-align: center">品飲世界經典名酒</h1>
+        </div>
+        <div class="detail">
+          <img src="./facility/1.png" alt="" style="width: 70vw" />
+        </div>
+        <div class="detail">
+          <p style="width: 70vw">
+            婚宴價格 <br />
+            <br />
+
+            § 中式婚宴專案：NT$9,999 / NT$12,999 / NT$15,999 / NT$18,999/桌/10人
+            <br />
+            § 西式婚宴專案：NT$999起/人 <br />
+            <br />
+
+            套裝組合 <br />
+            § 12桌以上獨享：中式精緻桌席 X 果汁無限暢飲 <br />
+            § 20桌以上加值禮遇：精選紅酒每桌1瓶 X 幸福蜜月行政客房1晚(含2客早餐)
+            <br />
+            § 禮賓接待區佈置服務 / 名家首選桌巾椅套雅典佈置 /
+            雅緻主桌擺設及專人服務 <br />
+            § 精美菜單及桌卡 / 主桌、接待桌、客桌雅緻桌花 / 迎賓、送客甜蜜喜糖
+            <br />
+            § 原場地專屬訂婚儀式佈置 <br />
+            <br />
+
+            注意事項 <br />
+            1.此專案適用於12桌起，未達12桌則不適用本專案優惠內容。 <br />
+            2.此專案均以內含一成服務費，桌席均以十人為一桌，加人加量需另計加價。
+            <br />
+            3.果汁升等新鮮柳丁汁暢飲特價NT$588+10%/桌，如自帶酒水，酌收清潔服務費：紅酒500元/瓶，
+            烈酒1,000元起/瓶。 <br />
+            4.此專案不適用尊爵俱樂部會員卡、古華HAPPY GO卡。 <br />
+            5.此專案不得與其他優惠合併使用，古華花園飯店保留變更及終止此優惠方案之權利。
+            <br />
+            <br />
+
+            訂席專線：(03)281-3636 <br />
+            ~禁止酒駕 未滿十八歲，禁止飲酒~
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

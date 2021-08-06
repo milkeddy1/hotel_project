@@ -1,0 +1,72 @@
+.rwd_navs a {
+  color: black;
+}
+/* 以下為到輪播圖之前的RWD */
+@media screen and (max-width: 1300px) {
+  .nav_bg img {
+    width: 100vw;
+    height: 10vh;
+  }
+  .nav_bg img:nth-child(1) {
+    display: none;
+  }
+  .nav_bg img:nth-child(2) {
+    display: block;
+  }
+  .burger {
+    display: block;
+  }
+  .nav_icon {
+    display: none;
+  }
+  .home_link {
+    display: none;
+  }
+  .main_menu {
+    position: fixed;
+    z-index: 5;
+    height: 60vh;
+    background-color: #64101f;
+    /* opacity: 0.9; */
+    flex-direction: column;
+    /* display: none; */
+    top: 150%;
+    transition: top 0.5s ease-in-out;
+    overflow: scroll;
+  }
+
+  .main_menu li {
+    padding: 0.5rem;
+  }
+  .cross img:nth-child(1) {
+    display: block;
+    z-index: 2;
+    position: relative;
+  }
+  .nav_logo img:nth-child(1) {
+    display: block;
+  }
+  /* .main_menu li:hover {
+      transition: all 0.5s ease;
+      background-color: #dba616;
+    } */
+
+  .web_navs {
+    display: none;
+  }
+  .rwd_navs {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  .navigation-manual {
+    display: none;
+  }
+  .navigation-auto {
+    display: none;
+  }
+}
+
+.new_details_rwd {
+  display: none;
+}

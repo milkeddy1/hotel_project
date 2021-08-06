@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="style_RWD.css">
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+    <script src="./jquery-3.3.1.min.js"></script>
+    </head>
+    <script>
+     
+
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+      //  header
+        $("header").load("header.html");
+      //footer
+        $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <div class="news_title">
+          <h1 class="title_one" style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+          </div>
+          <div class="news_title" >
+          <h1 class="title_two" style="width: 80vw;">最新消息</h1>
+          </div>
+      </div>
+      
+
+      <!-- news web -->
+      <div class="new_web" >      
+          <div>
+            
+         
+            <!-- roll one -->
+            <div class="row_one" >
+              <div class="news1" data-aos="fade-left" >
+                <!-- 旋轉圖區域 -->
+                <div class="spin_pic1">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./home images/公告.png" alt="" />
+                  </div>
+                 
+                </div>
+                <!-- 旋轉圖下方文字 -->
+                <div class="news1_words">
+                  <div class="new1_title" style="text-align: center">
+                    <h2 style="font-size: 1.5rem">防疫公告</h2>
+                  </div>
+                  <div
+                    class="new1_content"
+                    style="
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                    "
+                  >
+                    <p style="width: 15vw">
+                      本飯店非防疫旅館，請安心入住。
+                      古華花園飯店敬上
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- NEWS2 -->
+              <div class="news2" data-aos="fade-left" data-aos-delay="200">
+                <div class="spin_pic2">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./home images/公告.png" alt="" />
+                  </div>
+                  <div class="spin2">
+                    <a href="./news_1_2.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <div class="new2_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">暫停服務區域</h2>
+                </div>
+                <div
+                  class="new2_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    即日起， 繽紛西餐廳、明皇樓、古華薈、酷糕點及宴會廳將暫時停止提供服務，並著力於提升防疫措施，相關餐飲服務如有更動將另行公告。
+                  </p>
+                </div>
+              </div>
+  
+              <div class="news3" data-aos="fade-left" data-aos-delay="400">
+                <div class="spin_pic3">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./home images/公告.png" alt="" />
+                  </div>
+                  <div class="spin3">
+                    <a href="./news_1_3.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+  
+                <div class="new3_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">實名制登記</h2>
+                </div>
+                <div
+                  class="new3_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    參觀採預約及實聯制入場，如欲至現場參觀，敬請於營業時間提前來電預約，也請貴賓於店內時全程配戴口罩，感謝大家的支持配合。
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- roll one -->
+            <!-- roll two -->
+            <div class="row_two"   >
+              <div class="news1" data-aos="fade-right"  >
+                <!-- 旋轉圖區域 -->
+                <div class="spin_pic1">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./home images/3.png" alt="" />
+                  </div>
+                  <div class="spin">
+                    <a href="./news_1_4.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <!-- 旋轉圖下方文字 -->
+                <div class="news1_words">
+                  <div class="new1_title" style="text-align: center">
+                    <h2 style="font-size: 1.5rem">限時旅遊住房專案</h2>
+                  </div>
+                  <div
+                    class="new1_content"
+                    style="
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                    "
+                  >
+                    <p style="width: 15vw">
+                      行政客房、精緻房、豪華房各式房型限時限量優惠價格。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- NEWS2 -->
+              <div class="news2" data-aos="fade-right" data-aos-delay="200">
+                <div class="spin_pic2">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./home images/4.png" alt="" />
+                  </div>
+                  <div class="spin2">
+                    <a href="./news_1_5.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <div class="new2_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">Rakuten住房專案</h2>
+                </div>
+                <div
+                  class="new2_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    配合Rakuten主場球賽，
+                    住宿及門票套票超優惠價格!!
+                  </p>
+                </div>
+              </div>
+  
+              <div class="news3" data-aos="fade-right" data-aos-delay="400">
+                <div class="spin_pic3">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/f029700e-362b-4145-a9b1-4ed3cb5d4de0.png" alt="" />
+                  </div>
+                  <div class="spin3">
+                    <a href="./news_1_6.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+  
+                <div class="new3_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">Xperk住房專案</h2>
+                </div>
+                <div
+                  class="new3_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    住房+xpark門票+古華經典牛肉麵的超優惠價格!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- roll two -->
+            </div>
+            <!-- roll three -->
+            <div class="row_three" >
+              <div class="news1"  data-aos="fade-left">
+                <!-- 旋轉圖區域 -->
+                <div class="spin_pic1">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./home images/公告.png" alt="" />
+                  </div>
+                  <div class="spin">
+                    <a href="./news_1_7.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <!-- 旋轉圖下方文字 -->
+                <div class="news1_words">
+                  <div class="new1_title" style="text-align: center">
+                    <h2 style="font-size: 1.5rem">營業時間調整</h2>
+                  </div>
+                  <div
+                    class="new1_content"
+                    style="
+                      text-align: center;
+                      display: flex;
+                      justify-content: center;
+                    "
+                  >
+                    <p style="width: 15vw">
+                      古華薈營業時間於即日起調整如下：
+                      <br>
+                      午餐：11:30-14:00 每日  
+                      <br>
+                      晚餐：17:30-21:00 每日 
+                      <br>
+                      宵夜：21:00-23:00 
+                      周五~周六
+                    </p>
+                  </div>
+                          </div>
+
+                          
+              </div>
+              <!-- NEWS2 -->
+              <div class="news2" data-aos="fade-left" data-aos-delay="200">
+                <div class="spin_pic2">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./home images/公告.png" alt="" />
+                  </div>
+                  <div class="spin2">
+                    <a href="./news_1_8.html"
+                      ><img src="./home images/icon.png" alt="" class="thespin"
+                    /></a>
+                  </div>
+                </div>
+                <div class="new2_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">防疫公告</h2>
+                </div>
+                <div
+                  class="new2_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    ❆  各房間皆使用獨立空調 ❆
+                    <br>
+                    為預防新型冠狀病毒，古華花園飯店並採取以下應變措施，提供您安心的環境並守護您的健康。
+                  </p>
+                </div>
+              </div>
+  
+              <div class="news3" data-aos="fade-left" data-aos-delay="400">
+                <div class="spin_pic3">
+                  <div
+                    class="news_pic1"
+                    style="display: flex; justify-content: center"
+                  >
+                    <img src="./最新/9.png" alt="" />
+                  </div>
+                  
+                </div>
+  
+                <div class="new3_title" style="text-align: center">
+                  <h2 style="font-size: 1.5rem">外送系統</h2>
+                </div>
+                <div
+                  class="new3_content"
+                  style="
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                  "
+                >
+                  <p style="width: 15vw">
+                    即日起古華花園飯店提供Uber Eats外送服務，
+                    讓您在家也能享用到五星級飯店美食。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- roll three -->
+            </div>
+            </div> 
+          </div>
+          <!-- all news -->
+      </div>
+        
+      <div class="new_rwd">
+        <div class="rone">
+          <div>
+            <img src="./NEWS RWD/组 105.png" alt="">
+            <h1>防疫公告</h1>
+            <p>本飯店非防疫旅館，請安心入住。
+ 
+              古華花園飯店敬上</p>
+          </div>
+          <div>
+            <a href="./news_1_2.html"><img src="./NEWS RWD/组 105.png" alt=""></a>
+            <h1>暫停服務區域</h1>
+            <p>即日起， 繽紛西餐廳、明皇樓、古華薈、酷糕點及宴會廳將暫時停止提供服務，並著力於提升防疫措施，相關餐飲服務如有更動將另行公告。</p>
+          </div>
+        </div>
+        <div class="rone">
+          <div>
+            <a href="./news_1_3.html"><img src="./NEWS RWD/组 105.png" alt=""></a>
+            <h1>實名制登記</h1>
+            <p>參觀採預約及實聯制入場，如欲至現場參觀，敬請於營業時間提前來電預約，也請貴賓於店內時全程配戴口罩，感謝大家的支持配合。
+            </p>
+          </div>
+          <div>
+            <a href="./news_1_4.html"><img src="./NEWS RWD/资源-1.png" alt=""></a>
+            <h1>限時旅遊住房專案</h1>
+            <p>行政客房、精緻房、豪華房各式房型限時限量優惠價格。</p>
+          </div>
+        </div>
+        <div class="rone">
+          <div>
+            <a href="./news_1_5.html"><img src="./NEWS RWD/2.png" alt=""></a>
+            <h1>Rakuten住房專案</h1>
+            <p>配合Rakuten主場球賽，
+              住宿及門票套票超優惠價格!!</p>
+          </div>
+          <div>
+            <a href="./news_1_6.html"><img src="./NEWS RWD/3.png" alt=""></a>
+            <h1>Xperk住房專案</h1>
+            <p>住房+xpark門票+古華經典牛肉麵的超優惠價格!</p>
+          </div>
+        </div>
+        <div class="rone">
+          <div>
+            <a href="./news_1_7.html"><img src="./NEWS RWD/组 105.png" alt=""></a>
+            <h1>營業時間調整</h1>
+            <p>古華薈營業時間於即日起調整如下：
+              午餐：11:30-14:00 每日  
+              晚餐：17:30-21:00 每日 
+              宵夜：21:00-23:00 
+              周五~周六
+               </p>
+          </div>
+          <div>
+            <a href="./news_1_8.html"><img src="./NEWS RWD/组 105.png" alt=""></a>
+            <h1>防疫公告</h1>
+            <p>❆  各房間皆使用獨立空調 ❆
+              為預防新型冠狀病毒，古華花園飯店並採取以下應變措施，提供您安心的環境並守護您的健康。</p>
+          </div>
+        </div>
+        <div class="rone">
+          <div>
+            <a href="./news_1_9.html"><img src="./NEWS RWD/11.png" alt=""></a>
+            <h1>外送系統</h1>
+            <p>即日起古華花園飯店提供Uber Eats外送服務，
+              讓您在家也能享用到五星級飯店美食。
+              </p>
+          </div>
+          <div>
+            <img src="./NEWS RWD/组 105.png" alt="">
+            <h1>訂席中心</h1>
+            <p>訂席中心即日起
+              營業時間更改為10:00-19:00
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page">
+        <h1 style="background-color:#64101F ; color: white;border-radius: 100px;">1</h1>
+        <a href="./news_two.html" style="text-decoration: none;"><h1 style="color: black;">2</h1></a>
+        
+      </div>
+
+    </main>
+    <footer style="padding-top:40rem;"></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="./style_food.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1
+            class="en_title" 
+            >
+              FOOD
+            </h1>
+          </div>
+          <div class="news_title">
+            <h1
+            class="chinese_title"
+              style="
+                
+                width: 80vw;
+              "
+            >
+              多元美食
+            </h1>
+          </div>
+          <div class="sub_title" >
+            <h1>經典名酒</h1>
+        </div>
+        </div>
+
+        <div class="all">
+            
+                <div class="detail"><h1 style="text-align: center;">品飲世界經典名酒</h1></div>
+                <div class="detail"><img src="./food/6.png" alt="" ></div>
+                <div class="detail" ><p>
+                    凡至各餐廳消費，即享有以下優惠： <br> <br>
+                § 各國世紀風味威士忌、烈酒、甜酒杯飲 『買一送一』 <br>
+                § 名酒輕鬆嚐 『威士忌品牌系列套組品酩特價』 <br>
+                § 任選指定各國整瓶啤酒、葡萄酒、烈酒、威士忌等酒款 『買六送一』(不同酒款以低價位贈送)</p></div>
+                    <!-- 分隔線 -->
+
+         </div>
+        
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

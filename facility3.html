@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facilities</title>
+    <link rel="stylesheet" href="./style_facility.css" />
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+       
+        <div>
+          <div class="news_title">
+            <h1 class="en_title">
+              facility & service
+            </h1>
+          </div>
+          <div class="news_title">
+            <h1
+            class="chinese_title"
+              style="
+                
+                width: 80vw;
+              "
+            >
+            設施服務
+            </h1>
+          </div>
+          <div class="sub_title">
+            <h1>健身中心</h1>
+        </div>
+        </div>
+        <!-- 內文 -->
+        <div class="all">
+          <div class="detail">
+              <img src="./facility/4.png" alt="" class="big_pic">
+              <img src="./facility/5.png" alt="" style="margin: 2rem; " class="big_pic1">
+              <img src="./facility/6.png" alt="" style="margin: 2rem;" class="big_pic1">
+              <p style="width: 70vw;">【
+                元氣健身中心】服務專線：(03) 281-1818 轉 2501 <br> <br>
+ 
+                擁有一流健身設備、蒸氣室、烤箱、戶外按摩水療池、戶外游泳池，讓您忘卻一天的疲憊與壓力，煥發神采，也讓賓客在此鍛煉體魄，鬆弛身心，盡興而歸。服務台販售游泳及客房用品，給房客最貼心的服務。 <br> <br> <br></p>
+              <p style="width: 70vw;">
+                【元氣健身中心】(含健身房、三溫暖、戶外游泳池) <br> <br>
+                    § 服務時間：健身房06:00~22:00，三溫暖、戶外游泳池 平日:13:30~21:30 假日:07:00~21:30。(每時段為90分鐘) <br>
+                    § 每月第一個星期一為維修保養日，暫停開放；每日21：30後開始清潔並關閉設施電源；提供之浴巾、面巾置物櫃鑰匙，離場前請歸回櫃檯。 <br>
+                    § 游泳池及按摩水療池預計開放時間為6月8日至11月。【健身房、三溫暖(含烤箱、蒸氣室)】
+                    (如遇水情吃緊，將視情況調整開放日期，如造成您的不便懇請見諒) <br>
+                    § 16歲以上使用，健身房請穿著運動鞋與正式運動服裝，三溫暖內部空間需脫鞋入內使用。 <br> <br> <br></p>
+              <p style="width: 70vw;">
+                【戶外游泳池(含按摩水療池)】 <br> <br>
+                § 建議身高140公分以上使用，需穿著泳衣、泳帽，0~3歲嬰幼兒禁止進入，12歲以下需家長全程在旁陪同，禁止單獨進入泳池，勿將孩童滯留現場。 <br> <br> <br>
+                登記方式: <br> <br>
+                需在開放該時段前10分鐘至一樓大廳櫃台側櫃於現場排隊依序登記(以有元氣體驗券者為優先/加購者須於該場次有空位才會開放加購/加購一張一時段為100元/周六日及連續假期至B館五樓登記)/每月第一週星期一為維護保養日不開放/票券過期則無法使用 <br> <br> <br>
+                攜帶物品限制: <br> <br>
+                為使顧客都能安全使用泳池，禁止使用大型充氣泳圈、蛙鞋、呼吸管及划手板。</p>
+        </div>
+        
+        
+   </div>
+        
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>

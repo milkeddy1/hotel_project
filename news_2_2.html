@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="style_news.css">
+    <link rel="stylesheet" href="./style_RWD.css" />
+    <link rel="stylesheet" href="./style_navfooter.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+      $(function () {
+        // RWD
+        $(".burger").click(function () {
+          $(".main_menu").css("top", "0%");
+          $(".burger").empty();
+          $(".ctrl").removeClass("upperline");
+        });
+
+        $(".cross").click(function () {
+          $(".main_menu").css("top", "-150%");
+          $(".burger").append(
+            "<img id='open'src='./RWD/homepage/Icon ionic-md-menu.png'style='width: 7vw; height: 5vw'/>"
+          );
+          $(".ctrl").addClass("upperline");
+        });
+        //  header
+      $("header").load("header.html");
+      //footer
+      $("footer").load("footer.html");
+      });
+
+      // RWD的部分
+    </script>
+  <body>
+    <header></header>
+
+    <main>
+      <div>
+        <!-- title -->
+        <div>
+          <div class="news_title">
+            <h1 style="border-bottom:1px solid #64101F; padding-bottom: 3rem;">NEWS</h1>
+            </div>
+            <div class="news_title" >
+            <h1 class="border" style="width: 80vw;">最新消息</h1>
+            </div>
+            <div class="sub_title">
+                <h1>2021尊寵住房優惠專案【優惠】</h1>
+            </div>
+        </div>
+        
+        <div style="width: 75vw; margin: 0 auto;line-height: 3rem;width: 50vw;">
+            <p style="position: relative; top: 20rem;">
+                適用期間：即日起 ~ 2021.12.31 <br>
+ 
+☎ 訂房專線： (03) 281-2626<br>
+ 
+城市休憩專案<br>
+§ 行政客房休息3小時 NT$1,599 (每加60分鐘，需額外付費NT$600)<br> <br>
+
+尊寵住房專案<br>
+§ 行政客房(不含早餐)              NT$2,999 <br>
+§ 行政客房(含早餐1客)            NT$3,399<br>
+§ 行政客房(含早餐2客)            NT$3,799<br>
+§ 行政三人房(含早餐3客)         NT$4,799<br>
+§ 豪華雙床四人房(含早餐4客)  NT$5,299<br>
+§ 豪華雙床四人房(不含早餐)    NT$4,699<br> <br>
+
+尊寵加價購專案<br>
+§ 行政客房一泊二食           NT$4,599(含早餐2客、西餐廳2人午餐或晚餐)<br>
+§ 行政三人客房三人同享    NT$5,299(含早餐3客、西餐廳3人午餐或晚餐)<br>
+§ 豪華雙床客房天倫之樂    NT$5,999(含早餐4客、西餐廳4人午餐或晚餐)<br><br>
+ 
+尊寵套房專案<br> 
+§ 精緻套房(含早餐2客)          NT$5,999<br>
+§ 外交官套房(含早餐2客)       NT$6,999<br><br>
+ 
+注意事項<br>
+1.行政三人房為行政客房(一大床)+一小床。<br>
+2.以上專案適用於平、假日，農曆春節期間(02/12-02/15)需加價NT$1,000。<br>
+3.尊寵加價購專案不適用於特殊節日(依飯店定義為準)。<br>
+4.每一客房均贈送水果。<br>
+5.以上專案不得與其他優惠方案合併使用，古華花園飯店保留變更及終止此優惠方案之權利。<br>
+ 
+※如停車位客滿，請使用周邊停車場。響應節能減碳，請多搭乘大眾運輸工具。<br>
+            </p>
+        </div>
+         
+
+    </main>
+    <footer style="padding-top: 40rem"></footer>
+  </body>
+</html>
